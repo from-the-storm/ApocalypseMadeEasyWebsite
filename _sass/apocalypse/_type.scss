@@ -1,0 +1,149 @@
+body {
+    font-family: $body-font;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $black
+}
+
+h1, h2, h3, .city, .number, #mc_embed_signup .button {
+    font-family: $header-font;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    line-height: 1;
+    font-size: 1.9em;
+    @include variable-query(470px) {
+        font-size: 2.8em;
+    }
+    @include media-query {
+        font-size: 5em;
+    }
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    @include media-query {
+        max-width: 530px;
+    }
+    h2 {
+    font-size: 1em;
+    font-family: $body-font;
+    text-transform: none;
+    font-weight: normal;
+    line-height: 1.8;
+    margin: 0.5rem 0 0;
+    max-width: 100%;
+        @include variable-query(470px){
+            font-size: 1.1em;
+        }
+        @include media-query{
+            line-height: 1.9;
+            font-size: 1.2em;
+            margin: 0.5rem 1.5rem 0 0;
+        }
+    }
+}
+
+h2, h3 {
+    font-size: 2.4em;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+}
+
+h2#signup {
+    padding-top: 92px;
+    margin-top: -92px;
+}
+
+h3 span {
+    display: inline-block;
+    font-size: 2.2em;
+    margin-right: 1rem;
+    @include media-query {
+        display: none;
+    }
+}
+
+.step-body h3 {
+    line-height: 1.1;
+}
+
+.info-content {
+    h3 {
+        font-size: 1.7em;
+        margin-top: 0.25em;
+    }
+    p {
+        margin-bottom: 0.25em;
+    }
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+#fourth-wall {
+    background: $red;
+    overflow: hidden;
+    transform: rotate(-2deg);
+    margin-top: 4rem;
+    box-shadow: 0 0 1px $red;
+        &:after {
+            content: '<p>4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach</p>';
+            display: block;
+            height: 100%;
+            width: 100%;
+            color: $white;
+            text-transform: uppercase;
+            font-family: $header-font;
+            font-size: 0.85em;
+            white-space: nowrap;
+            margin: 0.5rem 0.5rem 0.5rem -1rem;
+            -webkit-animation: fade 0.9s infinite alternate;
+            animation: fade 0.9s infinite alternate;
+        }
+}
+
+#section-funding > p {
+    font-size: 0.9em;
+}
+
+.number {
+    position: absolute;
+    top: 0;
+    font-size: 16em;
+    display: none;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+        span {
+            width: 100%;
+        }
+        @include media-query {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+}
+
+/* IE 10 and 11 hacks */
+@media all and (-ms-high-contrast:none) {
+    .number { display: none; }
+    *::-ms-backdrop, .number { display: none; }
+}
+
+span.hooray {
+    background: $black;
+    padding: 0 0.25rem;
+    border-radius: 2px;
+    -webkit-animation: 2.2s infinite letter-color-explosion;
+    animation: 2.2s infinite letter-color-explosion;
+}
+
+code {
+    text-transform: uppercase;
+}

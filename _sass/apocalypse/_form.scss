@@ -1,0 +1,80 @@
+/* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
+Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
+
+#mc_embed_signup {
+    form {
+        padding: 10px 0 10px 0;
+        margin-bottom: 3rem;
+        font-size: 1.1em;
+    }
+    input.email {
+        background: none;
+        color: $white;
+        box-sizing: border-box;
+        height: 32px;
+        padding: 0 1rem 0 0.4rem;
+        display: inline-block;
+        margin: 0 0 0.3rem 0;
+        width: 100%;
+        vertical-align:top;
+        border: 0;
+        border-bottom: 2px solid $red;
+            @include variable-query(769px){
+                width: 350px;
+                margin-bottom: 0;
+            }
+    }
+    .clear {
+        display: block;
+            @include variable-query(769px){
+                display: inline-block;
+            }
+    }
+    .button {
+        border: none;
+        letter-spacing: .03em;
+        color: $white;
+        background: none;
+        box-sizing:border-box;
+        height: 32px;
+        line-height: 32px;
+        padding: 0 0.5rem;
+        display: inline-block;
+        margin: 0.5rem 0 0 0;
+        transition: all 0.25s ease-in-out 0s;
+            &:hover {
+                cursor: pointer;
+                -webkit-animation: 2.2s infinite color-explosion;
+                animation: 2.2s infinite color-explosion;
+            }
+            @include media-query {
+                margin: 0 0 0 -10px;
+                border-bottom: 2px solid $red;
+            }
+    }
+    div#mce-responses {
+        float: left;
+        top: -1.4em;
+        padding: 0em .5em 0em .5em;
+        overflow: hidden;
+        width: 90%;
+        margin: 0 5%;
+        clear: both;
+    }
+    div.response {
+        margin: 1em 0;
+        padding: 1em .5em .5em 0;
+        font-weight: bold;
+        float: left;
+        top: -1.5em;
+        z-index: 1;
+        width: 80%;
+    }
+    #mce-error-response {
+        display: none;
+    }
+    #mce-success-response {
+        color: $green;
+        display: none;
+    }
+}

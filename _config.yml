@@ -1,0 +1,10 @@
+title: Apocalypse Made Easy!
+email: info@apocalypsemadeeasy.com
+description: A team-based apocalypse survival training course that runs in your phone's browser. It's free, and no longer very deadly. Available in Vancouver and Kelowna. A Social Innovators Challenge project funded by the Movember Foundation.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:title
+destination: ./docs
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,261 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: $white;
+    padding-top: 50px;
+        &#four-oh-six-minus-two {
+            background: $jet;
+        }
+}
+
+.section-body {
+    max-width: 36em;
+    margin: 0 auto;
+    padding: 1rem;
+    @include media-query {
+        display: flex;
+        align-items: center;
+        max-width: $width;
+    }
+    &.four-oh-four {
+        justify-content: center;
+            .fifty {
+                flex: 0 1 70%;
+            }
+    }
+    .fifty {
+        flex: 0 1 50%;
+        padding: 0 0.5rem;
+            &.aligned {
+                text-align: center;
+                padding-top: 1rem;
+            }
+            @include media-query {
+                padding: 0 1rem;
+            }
+    }
+    .sixty {
+        padding: 0.5rem;
+        @include media-query {
+            padding: 1rem;
+            width: 60%;
+            transform: rotate(-7deg);
+        }
+    }
+    .center {
+        margin: 0 -0.5em;
+        padding: 0 0 1rem;
+        display: flex;
+        justify-content: center;
+            @include media-query {
+                padding: 1rem;
+                margin: 0;
+            }
+    }
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 36em;
+    padding: 1.5rem;
+    @include media-query {
+        padding: 2rem;
+        max-width: $width;
+    }
+}
+
+.title {
+    display: flex;
+}
+
+section#welcome {
+    position: relative;
+    overflow: hidden;
+        header {
+            margin-bottom: 1rem;
+            max-width: 400px;
+            margin: 0 auto 1rem;
+                @include media-query {
+                    margin: 0;
+                    max-width: none;
+                }
+        }
+}
+
+section#getting-started {
+    background: $black;
+    color: $white;
+    .step {
+        position: relative;
+        padding-bottom: 3rem;
+            @include media-query {
+                padding-bottom: 0;
+            }
+            @include variable-query(980px) {
+                display: flex;
+                align-items: center;
+            }
+            .step-body, .step-image {
+                @include variable-query(980px) {
+                    flex: 1 1 50%;
+                }
+            }
+            .step-body {
+                z-index: 2;
+                position: relative;
+                    @include media-query {
+                        padding-right: 5rem;
+                    }
+                div {
+                    max-width: 600px;
+                    margin: 0 auto;
+                    padding: 0 1.5rem;
+                    @include variable-query(670px) {
+                        padding: 1rem;
+                    }
+                }
+            }
+            .step-image {
+                background-repeat: no-repeat;
+                background-position: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: none;
+                display: none;
+                    @include variable-query(670px) {
+                        height: 400px;
+                        background-size: contain;
+                        position: static;
+                        display: block;
+                    }
+                    @include variable-query(980px) {
+                        background-size: cover;
+                    }
+                    @include variable-query(1100px) {
+                        height: 400px;
+                    }
+                    @include variable-query(1300px) {
+                        height: 500px;
+                    }
+                    @include variable-query(1500px) {
+                        height: 600px;
+                    }
+                    @include variable-query(1800px) {
+                        height: 700px;
+                    }
+                    @include variable-query(2000px) {
+                        height: 800px;
+                    }
+            }
+            &:first-child {
+                background: lighten($black, 10%);
+                .step-image {
+                    @include variable-query(670px) {
+                        background-image: url('img/scenes/pie-trap.jpg');
+                    }
+                }
+            }
+            &:nth-child(2) {
+                background: lighten($black, 5%);
+                .step-image {
+                    @include variable-query(670px) {
+                        background-image: url('img/scenes/trust-fall.jpg');
+                    }
+                }
+            }
+            &:last-child {
+                .step-image {
+                    @include variable-query(670px) {
+                        background-image: url('img/scenes/garbage-fire.jpg');
+                    }
+                }
+            }
+    }
+}
+
+section#faqs {
+    position: relative;
+    overflow: hidden;
+}
+
+.ad-nauseum {
+    position: absolute;
+    top: 10%;
+    left: -25%;
+    width: 150%;
+    height: 80%;
+    z-index: -1;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='190px'><text x='0' y='15' fill='black' font-family='Kanit, sans-serif' font-weight='bold' font-size='15'>APOCALYPSE MADE EASY!</text></svg>");
+    transform: rotate(-7deg);
+    -webkit-backface-visibility: hidden;    
+    backface-visibility: hidden;
+    opacity: 0.03;
+        @include media-query {
+            opacity: 0.05;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, rgba(243,243,243,0), rgba(243,243,243, 1) 90%);
+            width: 100%;
+            height: 4em;
+        }
+}
+
+section#faqs .ad-nauseum {
+    opacity: 0.03;
+    transform: rotate(7deg);
+}
+
+.site-footer {
+    padding: 0;
+    color: $white;
+    background: $jet;
+    padding: 1rem 0;
+    overflow: hidden;
+        footer {
+            padding: 0;
+        }
+        @include media-query {
+            padding: 3rem 0 1rem;
+        }
+        #section-funding {
+            padding: 4rem 2rem 2rem;
+            margin: 0 auto;
+            #logos {
+                text-align: center;
+                margin-top: 1rem;
+                    img {
+                        margin: 1rem 1rem 0;
+                    }
+            }
+            @include variable-query(1160px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 1260px;
+                text-align: left;
+                    p {
+                        margin-right: 2rem;
+                        max-width: 720px;
+                    }
+                    #logos {
+                        margin-top: 0;
+                             img {
+                                 margin-top: 0;
+                             }
+                    }
+            }
+        }
+}

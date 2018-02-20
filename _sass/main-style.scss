@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$body-font: "Noto Sans", sans-serif;
+$header-font: "Kanit", sans-serif;
+
+$white: #f3f3f3;
+$black: #232323;
+$jet: #000000;
+$red: #f66f5c;
+$blue: #4fc3f7;
+$orange: #ff8a65;
+$green: #9cf188;
+$purple: #7986cb;
+
+// Default width of the content area
+$width: 70em;
+
+@mixin media-query {
+  @media screen and (min-width: 64em) {
+    @content;
+  }
+}
+
+@mixin variable-query($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+// Import partials.
+@import
+  "normalize",
+  "apocalypse/form",
+  "apocalypse/base",
+  "apocalypse/elements",
+  "apocalypse/navigation",
+  "apocalypse/accordion",
+  "apocalypse/type",
+  "apocalypse/animation",
+  "apocalypse/slider/slick",
+  "apocalypse/slider/slick-theme"
+;

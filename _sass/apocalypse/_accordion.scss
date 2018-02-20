@@ -1,0 +1,53 @@
+.accordion {
+    margin-top: 1rem;
+    padding-left: 0;
+    background: none;
+    list-style-type: none;
+        li.accordion-item {
+            margin: 1rem 0;
+            a {
+                text-decoration: none;
+            }
+            &:first-child > :first-child {
+                border-radius: 3px 3px 0 0;
+            }
+            &:last-child > :last-child {
+                border-radius: 0 0 3px 3px;
+            }
+            .accordion-title {
+                position: relative;
+                display: block;
+                padding: 1.25rem 1rem 1.25rem 2rem;
+                line-height: 1.5;
+                font-size: 1.1em;
+                color: $black;
+                    &:hover {
+                        background: darken($white, 10%);
+                    }
+                    &:before {
+                        position: absolute;
+                        top: 47%;
+                        left: 1rem;
+                        margin-top: -0.7rem;
+                        content: "+";
+                    }
+            }
+            &.is-active {
+                .accordion-title {
+                    font-weight: bold;
+                    background: darken($white, 10%);
+                }
+                > .accordion-title::before {
+                    content: '\2013';
+                }
+            }
+            .accordion-content {
+                display: none;
+                padding: 0 2rem 0.5rem;
+                background: darken($white, 10%);
+                    p {
+                        margin-top: 0;
+                    }
+            }
+        }
+}
