@@ -12,6 +12,9 @@ body {
         &#four-oh-six-minus-two {
             background: $jet;
         }
+        &.press {
+            padding-top: 0;
+        }
 }
 
 .section-body {
