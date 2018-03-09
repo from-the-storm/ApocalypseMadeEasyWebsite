@@ -3,7 +3,7 @@ $(document).on('ready', function() {
     // Initialize slider
     $('.screen-background').slick({
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 6000,
         speed: 700,
     });
 

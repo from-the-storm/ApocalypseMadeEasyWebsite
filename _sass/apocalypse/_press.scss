@@ -15,7 +15,7 @@ ul#stats {
             display: block;
         }
         @include media-query {
-            margin-right: 4rem;
+            margin-right: 5rem;
             margin-bottom: 0;
         }
 }
@@ -26,6 +26,12 @@ ul#stats {
 }
 
 .press {
+    h1 {
+        font-size: 3.2em;
+            @include media-query {
+                font-size: 5em;
+            }
+    }
     figure {
         margin: 2rem 0;
             a {
@@ -65,6 +71,9 @@ ul#stats {
         font-size: 1.1em;
             li {
                 margin-bottom: 0.5rem;
+            }
+            ~ p {
+                font-size: 1.2em;
             }
     }  
 }
