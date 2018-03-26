@@ -50,18 +50,15 @@ img {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     max-width: 320px;
-    @include media-query {
-        max-width: 280px;
-    }
+        @include media-query {
+            max-width: 280px;
+        }
     .screen-background {
         position: absolute;
-        top: 10.5%;
+        top: 9.5%;
         left: 8%;
-        width: 84.5%;
-        height: 76.5%;
-        div {
-            height: 500px;
-        }
+        width: 83.5%;
+        height: 77.5%;
         &.slick-loading {
             background: #ffffff;
         }

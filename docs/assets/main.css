@@ -470,7 +470,7 @@ body {
   padding-top: 50px; }
   body#four-oh-six-minus-two {
     background: #000000; }
-  body.press {
+  body.press, body.landing {
     padding-top: 0; }
 
 .section-body {
@@ -722,12 +722,10 @@ img {
       max-width: 280px; } }
   #phone .screen-background {
     position: absolute;
-    top: 10.5%;
+    top: 9.5%;
     left: 8%;
-    width: 84.5%;
-    height: 76.5%; }
-    #phone .screen-background div {
-      height: 500px; }
+    width: 83.5%;
+    height: 77.5%; }
     #phone .screen-background.slick-loading {
       background: #ffffff; }
   #phone #phone-skin {
@@ -808,6 +806,57 @@ img {
       #map-container #cities .city:last-of-type {
         border-top: 0; }
 
+.landing article {
+  min-height: 100vh;
+  background: #232323;
+  display: flex;
+  flex-flow: column; }
+  .landing article section {
+    width: 100%; }
+    .landing article section#selections {
+      flex: 1;
+      background-image: linear-gradient(to right, #2b2b2b, #2b2b2b 50%, #303030 50%); }
+      .landing article section#selections .section-body {
+        height: 100%;
+        flex-flow: wrap;
+        justify-content: center; }
+        .landing article section#selections .section-body img {
+          max-width: 700px;
+          width: 100%; }
+          @media screen and (min-width: 64em) {
+            .landing article section#selections .section-body img {
+              max-width: 500px; } }
+        .landing article section#selections .section-body .buttons {
+          justify-content: space-around;
+          display: flex;
+          width: 100%;
+          padding: 2rem 0; }
+          .landing article section#selections .section-body .buttons div a {
+            display: inline-block;
+            background: #f3f3f3;
+            font-family: "Kanit", sans-serif;
+            color: #232323;
+            text-decoration: none;
+            padding: 1rem 1.25rem;
+            font-size: 28px;
+            text-transform: uppercase;
+            min-width: 220px;
+            text-align: center; }
+    .landing article section#description {
+      color: silver;
+      background: #232323;
+      align-self: flex-end; }
+      .landing article section#description header {
+        max-width: 70em;
+        margin: 0 auto;
+        padding: 3rem 1rem; }
+        .landing article section#description header h1 {
+          display: inline;
+          margin-right: 0.5rem;
+          font-size: 1em; }
+        .landing article section#description header p {
+          display: inline; }
+
 .site-header {
   position: fixed;
   top: 0;
@@ -820,7 +869,6 @@ img {
     background: #f66f5c;
     font-family: "Kanit", sans-serif;
     text-transform: uppercase;
-    border-bottom: 1px solid #f3f3f3;
     font-size: 1.3em;
     padding: 0.5rem;
     text-align: center;
@@ -999,6 +1047,23 @@ span.hooray {
 code {
   text-transform: uppercase; }
 
+.boris .boris-container {
+  background-image: url("img/boris-loading-atlas.png");
+  animation: spinning 0.8s steps(9) infinite; }
+  .boris .boris-container.init {
+    background-image: url("img/boris-loaded-atlas.png");
+    animation: initialized 0.8s steps(7) infinite; }
+
+@keyframes spinning {
+  from {
+    background-position: 0; }
+  to {
+    background-position: -900px; } }
+@keyframes initialized {
+  from {
+    background-position: 0; }
+  to {
+    background-position: -700px; } }
 @-webkit-keyframes color-explosion {
   0%, 100% {
     background-color: #f66f5c; }

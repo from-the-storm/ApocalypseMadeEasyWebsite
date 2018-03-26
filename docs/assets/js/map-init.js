@@ -23,17 +23,17 @@ function initMap() {
     // If Vancouver
     if (selected == 'vancouver') {
         markers = [
-            ['UBC Main Mall', 49.266882, -123.254520, iconPath + 'dynamics.png'],
-            ['UBC Pacific Spirit', 49.271418, -123.254102, iconPath + 'water.png'],
-            ['SE False Creek', 49.273271, -123.102418, iconPath + 'quake.png'],
-            ['Stanley Park', 49.298072, -123.135838, iconPath + 'home.png']
+            ['UBC Main Mall', 49.266882, -123.254520, iconPath + 'dynamics.svg'],
+            ['UBC Pacific Spirit', 49.271418, -123.254102, iconPath + 'water.svg'],
+            ['SE False Creek', 49.273271, -123.102418, iconPath + 'earthquakes.svg'],
+            ['Stanley Park', 49.298072, -123.135838, iconPath + 'land.svg']
         ];
     } else {
         markers = [
-            ['Cultural District', 49.888039, -119.497512, iconPath + 'dynamics.png'],
-            ['Knox Mountain Park', 49.905295, -119.490656, iconPath + 'fire.png'],
-            ['Mission Creek Park', 49.877524, -119.431510, iconPath + 'home.png'],
-            ['UBC Okanagan', 49.940462, -119.399210, iconPath + 'water.png']
+            ['Cultural District', 49.888039, -119.497512, iconPath + 'dynamics.svg'],
+            ['Knox Mountain Park', 49.905295, -119.490656, iconPath + 'fire.svg'],
+            ['Mission Creek Park', 49.877524, -119.431510, iconPath + 'land.svg'],
+            ['UBC Okanagan', 49.940462, -119.399210, iconPath + 'water.svg']
         ]
     }
                         

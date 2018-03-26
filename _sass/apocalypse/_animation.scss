@@ -1,3 +1,32 @@
+.boris {
+	.boris-container {
+		background-image: url("img/boris-loading-atlas.png");
+		animation: spinning 0.8s steps(9) infinite;
+			&.init {
+				background-image: url("img/boris-loaded-atlas.png");
+				animation: initialized 0.8s steps(7) infinite;
+			}
+	}
+}
+
+@keyframes spinning {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: -900px;
+	}
+}
+
+@keyframes initialized {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: -700px;
+	}
+}
+
 @-webkit-keyframes color-explosion {
 	0%, 100% { background-color: $red; }
 	20% { background-color: $blue; } 

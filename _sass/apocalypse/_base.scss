@@ -12,7 +12,7 @@ body {
         &#four-oh-six-minus-two {
             background: $jet;
         }
-        &.press {
+        &.press, &.landing {
             padding-top: 0;
         }
 }
