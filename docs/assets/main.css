@@ -469,7 +469,8 @@ body {
   background: #f3f3f3;
   padding-top: 50px; }
   body#four-oh-six-minus-two {
-    background: #000000; }
+    background: #000000;
+    padding-top: 0; }
   body.press, body.landing {
     padding-top: 0; }
 

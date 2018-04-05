@@ -30,10 +30,10 @@ function initMap() {
         ];
     } else {
         markers = [
-            ['Cultural District', 49.888039, -119.497512, iconPath + 'dynamics.svg'],
+            ['Cultural District', 49.888039, -119.497512, iconPath + 'water.svg'],
             ['Knox Mountain Park', 49.905295, -119.490656, iconPath + 'fire.svg'],
             ['Mission Creek Park', 49.877524, -119.431510, iconPath + 'land.svg'],
-            ['UBC Okanagan', 49.940462, -119.399210, iconPath + 'water.svg']
+            ['UBC Okanagan', 49.940462, -119.399210, iconPath + 'dynamics.svg']
         ]
     }
                         
@@ -47,10 +47,10 @@ function initMap() {
 
     // Info for Kelowna Locations
     var ylwWindowContent = [
-        ['<div class="info-content">' + '<h3>GROUP DYNAMICS</h3>' + '<p>Downtown</p>' + '</div>'],
+        ['<div class="info-content">' + '<h3>WATER</h3>' + '<p>Downtown/Cultural District</p>' + '</div>'],
         ['<div class="info-content">' + '<h3>FOREST FIRE/DROUGHT</h3>' + '<p>At Knox Mountain Park</p>' + '</div>'],
         ['<div class="info-content">' + '<h3>LIVING OFF THE LAND</h3>' + '<p>At Mission Creek Park</p>' + '</div>'],
-        ['<div class="info-content">' + '<h3>WATER</h3>' + '<p>At UBC Okanagan</p>' + '</div>']
+        ['<div class="info-content">' + '<h3>GROUP DYNAMICS</h3>' + '<p>At UBC Okanagan</p>' + '</div>']
     ];
         
     // Display multiple markers on a map
