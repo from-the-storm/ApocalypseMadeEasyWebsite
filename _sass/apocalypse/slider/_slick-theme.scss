@@ -58,26 +58,20 @@ $slick-opacity-not-active: 0.25 !default;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
-    @include media-query {
+    @include variable-query(700px) {
         display: block !important;
     }
 }
 
 .slick-prev {
-    left: -3rem;
-    @include media-query {
-        left: -4rem;
-    }
+    left: -2.5rem;
     &:before {
         content: $slick-prev-character;
     }
 }
 
 .slick-next {
-    right: -3rem;
-    @include media-query {
-        right: -4rem;
-    }
+    right: -2.5rem;
     &:before {
         content: $slick-next-character;
     }

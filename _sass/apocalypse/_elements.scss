@@ -12,11 +12,6 @@ img {
         &#backfeed {
             width: 320px;
         }
-        &.mobile {
-            @include variable-query(670px) {
-                display: none;
-            }
-        }
         &.mov {
             /* IE 11 Hack */
             flex-shrink: 0;
@@ -35,7 +30,7 @@ img {
                 width: 80px;
             }
         }
-        @include media-query {
+        @include variable-query(700px) {
             &.mov.dt {
                 display: block;
             }
@@ -49,8 +44,8 @@ img {
     position: relative;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    max-width: 320px;
-        @include media-query {
+    max-width: 360px;
+        @include variable-query(700px) {
             max-width: 280px;
         }
     .screen-background {

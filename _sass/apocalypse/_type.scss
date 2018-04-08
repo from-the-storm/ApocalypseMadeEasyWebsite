@@ -17,7 +17,10 @@ h1 {
     @include variable-query(470px) {
         font-size: 2.8em;
     }
-    @include media-query {
+    @include variable-query(700px) {
+        font-size: 3.4em;
+    }
+    @include variable-query(1080px) {
         font-size: 5em;
     }
 }
@@ -34,12 +37,9 @@ h1 {
     text-transform: none;
     font-weight: normal;
     line-height: 1.8;
-    margin: 0.5rem 0 0;
+    margin: 0.5rem 1rem 0 0;
     max-width: 100%;
-        @include variable-query(470px){
-            font-size: 1.1em;
-        }
-        @include media-query{
+        @include variable-query(1080px){
             line-height: 1.9;
             font-size: 1.2em;
             margin: 0.5rem 1.5rem 0 0;
@@ -60,9 +60,13 @@ h2#signup {
 
 h3 span {
     display: inline-block;
-    font-size: 2.2em;
+    font-size: 1.5em;
     margin-right: 1rem;
-    @include media-query {
+    border-bottom: 5px solid;
+    @include variable-query(540px) {
+        font-size: 2.2em;
+    }
+    @include variable-query(880px) {
         display: none;
     }
 }
@@ -93,7 +97,7 @@ p {
     margin-top: 4rem;
     box-shadow: 0 0 1px $red;
         &:after {
-            content: '<p>4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach</p>';
+            content: '4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach';
             display: block;
             height: 100%;
             width: 100%;
@@ -115,7 +119,7 @@ p {
 .number {
     position: absolute;
     top: 0;
-    font-size: 16em;
+    font-size: 9em;
     display: none;
     z-index: 1;
     text-align: center;
@@ -123,10 +127,13 @@ p {
         span {
             width: 100%;
         }
-        @include media-query {
+        @include variable-query(880px) {
             display: flex;
             height: 100%;
             align-items: center;
+        }
+        @include variable-query(1080px) {
+            font-size: 16em;
         }
 }
 

@@ -433,10 +433,10 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     cursor: pointer;
     -webkit-animation: 2.2s infinite color-explosion;
     animation: 2.2s infinite color-explosion; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 1000px) {
     #mc_embed_signup .button {
-      margin: 0 0 0 -10px;
-      border-bottom: 2px solid #f66f5c; } }
+      border-bottom: 2px solid #f66f5c;
+      margin: 0 0 0 -10px; } }
 #mc_embed_signup div#mce-responses {
   float: left;
   top: -1.4em;
@@ -478,7 +478,7 @@ body {
   max-width: 36em;
   margin: 0 auto;
   padding: 1rem; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 700px) {
     .section-body {
       display: flex;
       align-items: center;
@@ -493,12 +493,12 @@ body {
     .section-body .fifty.aligned {
       text-align: center;
       padding-top: 1rem; }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 700px) {
       .section-body .fifty {
         padding: 0 1rem; } }
   .section-body .sixty {
     padding: 0.5rem; }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 700px) {
       .section-body .sixty {
         padding: 1rem;
         width: 60%;
@@ -508,7 +508,7 @@ body {
     padding: 0 0 1rem;
     display: flex;
     justify-content: center; }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 700px) {
       .section-body .center {
         padding: 1rem;
         margin: 0; } }
@@ -517,7 +517,7 @@ body {
   margin: 0 auto;
   max-width: 36em;
   padding: 1.5rem; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 40em) {
     .wrap {
       padding: 2rem;
       max-width: 70em; } }
@@ -530,61 +530,71 @@ section#welcome {
   overflow: hidden; }
   section#welcome header {
     margin-bottom: 1rem;
-    max-width: 400px;
     margin: 0 auto 1rem; }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 40em) {
       section#welcome header {
-        margin: 0;
-        max-width: none; } }
+        margin: 0; } }
+  section#welcome .center {
+    padding: 1rem 0; }
+    @media screen and (min-width: 700px) {
+      section#welcome .center {
+        padding: 1rem 1rem 1rem 4rem; } }
 
 section#getting-started {
   background: #232323;
   color: #f3f3f3; }
   section#getting-started .step {
     position: relative;
-    padding-bottom: 3rem; }
-    @media screen and (min-width: 64em) {
+    padding: 2rem 0 0; }
+    @media screen and (min-width: 880px) {
       section#getting-started .step {
-        padding-bottom: 0; } }
-    @media screen and (min-width: 980px) {
-      section#getting-started .step {
+        padding: 0;
         display: flex;
         align-items: center; } }
-    @media screen and (min-width: 980px) {
+    @media screen and (min-width: 880px) {
       section#getting-started .step .step-body, section#getting-started .step .step-image {
-        flex: 1 1 50%; } }
+        flex-basis: 50%; } }
     section#getting-started .step .step-body {
       z-index: 2;
-      position: relative; }
-      @media screen and (min-width: 64em) {
-        section#getting-started .step .step-body {
-          padding-right: 5rem; } }
+      position: relative;
+      padding-bottom: 1rem; }
       section#getting-started .step .step-body div {
-        max-width: 600px;
         margin: 0 auto;
-        padding: 0 1.5rem; }
-        @media screen and (min-width: 670px) {
+        padding: 0 1rem 1rem; }
+        @media screen and (min-width: 540px) {
           section#getting-started .step .step-body div {
-            padding: 1rem; } }
+            padding: 0 2.5rem 1rem; } }
+        @media screen and (min-width: 880px) {
+          section#getting-started .step .step-body div {
+            max-width: 600px;
+            padding: 0 6rem 0 2.5rem; } }
+        section#getting-started .step .step-body div h3 {
+          font-size: 2.4em;
+          margin-top: 0.5rem; }
+        @media screen and (min-width: 880px) {
+          section#getting-started .step .step-body div h3 {
+            font-size: 1.3em; } }
+        @media screen and (min-width: 1080px) {
+          section#getting-started .step .step-body div h3 {
+            font-size: 2.4em; } }
     section#getting-started .step .step-image {
       background-repeat: no-repeat;
       background-position: center;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: none;
-      display: none; }
-      @media screen and (min-width: 670px) {
+      background-size: cover;
+      height: 240px; }
+      @media screen and (min-width: 400px) {
         section#getting-started .step .step-image {
-          height: 400px;
-          background-size: contain;
-          position: static;
-          display: block; } }
-      @media screen and (min-width: 980px) {
+          height: 320px; } }
+      @media screen and (min-width: 540px) {
         section#getting-started .step .step-image {
-          background-size: cover; } }
-      @media screen and (min-width: 1100px) {
+          height: 440px; } }
+      @media screen and (min-width: 680px) {
+        section#getting-started .step .step-image {
+          height: 560px; } }
+      @media screen and (min-width: 880px) {
+        section#getting-started .step .step-image {
+          height: 350px; } }
+      @media screen and (min-width: 940px) {
         section#getting-started .step .step-image {
           height: 400px; } }
       @media screen and (min-width: 1300px) {
@@ -601,17 +611,14 @@ section#getting-started {
           height: 800px; } }
     section#getting-started .step:first-child {
       background: #3d3d3d; }
-      @media screen and (min-width: 670px) {
-        section#getting-started .step:first-child .step-image {
-          background-image: url("img/scenes/pie-trap.jpg"); } }
+      section#getting-started .step:first-child .step-image {
+        background-image: url("img/scenes/pie-trap.jpg"); }
     section#getting-started .step:nth-child(2) {
       background: #303030; }
-      @media screen and (min-width: 670px) {
-        section#getting-started .step:nth-child(2) .step-image {
-          background-image: url("img/scenes/trust-fall.jpg"); } }
-    @media screen and (min-width: 670px) {
-      section#getting-started .step:last-child .step-image {
-        background-image: url("img/scenes/garbage-fire.jpg"); } }
+      section#getting-started .step:nth-child(2) .step-image {
+        background-image: url("img/scenes/trust-fall.jpg"); }
+    section#getting-started .step:last-child .step-image {
+      background-image: url("img/scenes/garbage-fire.jpg"); }
 
 section#faqs {
   position: relative;
@@ -628,10 +635,7 @@ section#faqs {
   transform: rotate(-7deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  opacity: 0.03; }
-  @media screen and (min-width: 64em) {
-    .ad-nauseum {
-      opacity: 0.05; } }
+  opacity: 0.025; }
   .ad-nauseum:after {
     content: "";
     position: absolute;
@@ -643,7 +647,6 @@ section#faqs {
     height: 4em; }
 
 section#faqs .ad-nauseum {
-  opacity: 0.03;
   transform: rotate(7deg); }
 
 .site-footer {
@@ -654,7 +657,7 @@ section#faqs .ad-nauseum {
   overflow: hidden; }
   .site-footer footer {
     padding: 0; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 40em) {
     .site-footer {
       padding: 3rem 0 1rem; } }
   .site-footer #section-funding {
@@ -691,9 +694,6 @@ img {
   max-width: 100%; }
   img#backfeed {
     width: 320px; }
-  @media screen and (min-width: 670px) {
-    img.mobile {
-      display: none; } }
   img.mov {
     /* IE 11 Hack */
     flex-shrink: 0; }
@@ -707,7 +707,7 @@ img {
     img.mov.mb {
       height: 80px;
       width: 80px; } }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 700px) {
     img.mov.dt {
       display: block; }
     img.mov.mb {
@@ -717,8 +717,8 @@ img {
   position: relative;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  max-width: 320px; }
-  @media screen and (min-width: 64em) {
+  max-width: 360px; }
+  @media screen and (min-width: 700px) {
     #phone {
       max-width: 280px; } }
   #phone .screen-background {
@@ -737,7 +737,7 @@ img {
   position: relative;
   border-top: 1px dashed #3d3d3d;
   height: 400px; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 40em) {
     #map-container {
       border-top: 0; } }
   #map-container #map {
@@ -762,7 +762,7 @@ img {
     z-index: 2;
     border-radius: 2px;
     text-align: center; }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 40em) {
       #map-container #cities {
         top: 2rem;
         left: 2rem;
@@ -771,7 +771,7 @@ img {
       display: none;
       font-size: 0.9em;
       margin-bottom: 0.75rem; }
-      @media screen and (min-width: 64em) {
+      @media screen and (min-width: 40em) {
         #map-container #cities span {
           display: inline-block; } }
     #map-container #cities .city {
@@ -824,7 +824,7 @@ img {
         .landing article section#selections .section-body img {
           max-width: 700px;
           width: 100%; }
-          @media screen and (min-width: 64em) {
+          @media screen and (min-width: 40em) {
             .landing article section#selections .section-body img {
               max-width: 500px; } }
         .landing article section#selections .section-body .buttons {
@@ -935,14 +935,17 @@ h1 {
   @media screen and (min-width: 470px) {
     h1 {
       font-size: 2.8em; } }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 700px) {
+    h1 {
+      font-size: 3.4em; } }
+  @media screen and (min-width: 1080px) {
     h1 {
       font-size: 5em; } }
 
 .about {
   display: flex;
   align-items: center; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 40em) {
     .about {
       max-width: 530px; } }
   .about h2 {
@@ -951,12 +954,9 @@ h1 {
     text-transform: none;
     font-weight: normal;
     line-height: 1.8;
-    margin: 0.5rem 0 0;
+    margin: 0.5rem 1rem 0 0;
     max-width: 100%; }
-    @media screen and (min-width: 470px) {
-      .about h2 {
-        font-size: 1.1em; } }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 1080px) {
       .about h2 {
         line-height: 1.9;
         font-size: 1.2em;
@@ -973,9 +973,13 @@ h2#signup {
 
 h3 span {
   display: inline-block;
-  font-size: 2.2em;
-  margin-right: 1rem; }
-  @media screen and (min-width: 64em) {
+  font-size: 1.5em;
+  margin-right: 1rem;
+  border-bottom: 5px solid; }
+  @media screen and (min-width: 540px) {
+    h3 span {
+      font-size: 2.2em; } }
+  @media screen and (min-width: 880px) {
     h3 span {
       display: none; } }
 
@@ -999,7 +1003,7 @@ p {
   margin-top: 4rem;
   box-shadow: 0 0 1px #f66f5c; }
   #fourth-wall:after {
-    content: '<p>4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach</p>';
+    content: '4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach';
     display: block;
     height: 100%;
     width: 100%;
@@ -1018,18 +1022,21 @@ p {
 .number {
   position: absolute;
   top: 0;
-  font-size: 16em;
+  font-size: 9em;
   display: none;
   z-index: 1;
   text-align: center;
   width: 100%; }
   .number span {
     width: 100%; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 880px) {
     .number {
       display: flex;
       height: 100%;
       align-items: center; } }
+  @media screen and (min-width: 1080px) {
+    .number {
+      font-size: 16em; } }
 
 /* IE 10 and 11 hacks */
 @media all and (-ms-high-contrast: none) {
@@ -1162,7 +1169,7 @@ ul#stats {
     margin-bottom: 1rem; }
   ul#stats a {
     display: block; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 40em) {
     ul#stats {
       margin-right: 5rem;
       margin-bottom: 0; } }
@@ -1173,7 +1180,7 @@ ul#stats {
 
 .press h1 {
   font-size: 3.2em; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 40em) {
     .press h1 {
       font-size: 5em; } }
 .press figure {
@@ -1207,7 +1214,7 @@ ul#stats {
   .press ol ~ p {
     font-size: 1.2em; }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 40em) {
   .grid {
     display: flex; }
     .grid figure:first-of-type {
@@ -1345,23 +1352,17 @@ ul#stats {
     opacity: 0.75;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 700px) {
     .slick-prev,
     .slick-next {
       display: block !important; } }
 
 .slick-prev {
-  left: -3rem; }
-  @media screen and (min-width: 64em) {
-    .slick-prev {
-      left: -4rem; } }
+  left: -2.5rem; }
   .slick-prev:before {
     content: "◄"; }
 
 .slick-next {
-  right: -3rem; }
-  @media screen and (min-width: 64em) {
-    .slick-next {
-      right: -4rem; } }
+  right: -2.5rem; }
   .slick-next:before {
     content: "►"; }

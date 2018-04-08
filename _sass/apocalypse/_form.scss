@@ -47,9 +47,9 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
                 -webkit-animation: 2.2s infinite color-explosion;
                 animation: 2.2s infinite color-explosion;
             }
-            @include media-query {
-                margin: 0 0 0 -10px;
+            @include variable-query(1000px) {
                 border-bottom: 2px solid $red;
+                margin: 0 0 0 -10px;
             }
     }
     div#mce-responses {
