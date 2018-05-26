@@ -81,6 +81,7 @@ body {
 section#welcome {
     position: relative;
     overflow: hidden;
+    padding: 1.5rem 0;
         header {
             margin-bottom: 1rem;
             margin: 0 auto 1rem;
@@ -89,10 +90,13 @@ section#welcome {
                 }
         }
         .center {
-            padding: 1rem 0;
+            padding: 1.5rem;
             @include variable-query(700px) {
-                padding: 1rem 1rem 1rem 4rem;
+                padding: 1.5rem 1.5rem 4rem 1.5rem;
             }
+        }
+        @include media-query {
+            padding: 3rem 0;
         }
 }
 
@@ -232,17 +236,17 @@ section#faqs .ad-nauseum {
     padding: 0;
     color: $white;
     background: $jet;
-    padding: 1rem 0;
-    overflow: hidden;
+    padding: 1rem 0 0;
         footer {
             padding: 0;
         }
         @include media-query {
-            padding: 3rem 0 1rem;
+            padding: 3rem 0 0;
         }
         #section-funding {
-            padding: 4rem 2rem 2rem;
+            padding: 4.5rem 2rem 2rem;
             margin: 0 auto;
+            color: darken($white, 30%);
             #logos {
                 text-align: center;
                 margin-top: 1rem;

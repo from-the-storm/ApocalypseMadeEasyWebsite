@@ -3,7 +3,7 @@
         <div class="section-body">
             <div class="fifty">
                 <h2 id="signup">Sign up!</h2>
-                <p>Receive a complimentary friendly email when we launch the course.</p>
+                <p>Receive a complimentary friendly email when we launch the course. Or, contact us. Backfeed, Head of Citizen Feedback, is standing by at <a href="mailto:info@apocalypsemadeeasy.com">info@apocalypsemadeeasy.com</a>.</p>
                 <div id="mc_embed_signup">
                     <form action="https://apocalypsemadeeasy.us16.list-manage.com/subscribe/post?u=176dbcf360f585cb5fa5e555d&amp;id=b49241b124" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
@@ -13,15 +13,13 @@
                     </div>
                     </form>
                 </div>
-                <h2>Or, contact us!</h2>
-                <p>Backfeed, Head of Citizen Feedback, is standing by at <a href="mailto:info@apocalypsemadeeasy.com">info@apocalypsemadeeasy.com</a>.</p>
             </div>
             <div class="fifty aligned">
                 <img id="backfeed" src="assets/img/backfeed.png" alt="Backfeed, the Feedback Monster" />
             </div>
         </div>
     </footer>
-    <div id="fourth-wall"></div>
+    <div id="first" class="fourth-wall"></div>
     <div id="section-funding">
         <p>Apocalypse Made Easy! is a Social Innovators Challenge Project funded by the <a href="https://ca.movember.com" target="_blank">Movember Foundation</a>. It was developed with support from the University of British Columbia's <a href="http://menshealthresearch.ubc.ca" target="_blank">Men's Health Research Program</a> and <a href="https://nursing.ubc.ca" target="_blank">School of Nursing</a>.</p>
         <div id="logos">
@@ -30,4 +28,10 @@
             <img height="70" width="70" class="ubc" src="assets/img/ubc.png" alt="Supported by the University of British Columbia" />
         </div>
     </div>
+    <div id="second" class="fourth-wall"></div>
 </div>
+{% if page.url == '/' %}
+<div id="east-agony-lake">
+    <img src="/assets/img/scenes/east-agony-lake.jpg" alt="Crossing East Agony Lake | Apocalypse Made Easy! | Art by Rita Fei" />
+</div>
+{% endif %}

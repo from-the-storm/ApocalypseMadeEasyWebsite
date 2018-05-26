@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Apocalypse Made Easy!</title>
-  <meta name="description" content="A team-based apocalypse survival training course that runs in your phone&#39;s browser. It&#39;s free, and no longer very deadly. Available in Vancouver and Kelowna....">
+  <meta name="description" content="A team-based apocalypse survival training course that runs in your phone&#39;s browser. And as of yesterday, it&#39;s no longer very deadly. Available in Vancouver a...">
   <meta name="msapplication-TileColor" content="#2c2c2c">
   <meta name="msapplication-config" content="../assets/img/icons/fav/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
@@ -42,12 +42,10 @@
 
   <body>
 
-
-      
+    
 <header class="site-header" role="banner">
   <a id="register" class="button" href="#signup" title="Sign Up!">Sign Up</a>
 </header>
-
 
 
     <main class="page-content" aria-label="Content">
@@ -62,7 +60,7 @@
                 <img height="80" width="80" class="mov mb" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
             <div class="about">
-                <h2>is an outdoor, team-based apocalypse survival training course that runs in your phone's browser. It's free, and no longer very deadly.</h2>
+                <h2>is an outdoor, team-based apocalypse survival training course that runs in your phone's browser. And as of <span class="date"></span> it's no longer very deadly.</h2>
                 <img height="80" width="80" class="mov dt" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
           </header>
@@ -82,20 +80,6 @@
       </div>
     </div>
   </section>
-  <section id="map-container">
-    <div id="map"></div>
-    <div id="cities">
-        <span>Scenario locations</span>
-        <div class="city">
-            <input type="radio" value="vancouver" id="vancouver" name="city" checked />
-            <label for="vancouver">Vancouver</label>
-        </div>
-        <div class="city">
-            <input type="radio" value="kelowna" id="kelowna" name="city" />
-            <label for="kelowna">Kelowna</label>
-        </div>
-    </div>
-  </section>
   <section id="getting-started">
     <div class="step">
       <div class="step-body">
@@ -111,7 +95,7 @@
         <div class="step-body">
             <div>
                 <h3><span>2</span>Choose a scenario!</h3>
-                <p>Create a team and pick from four different apocalypse scenarios <a href="#cities" title="View Apocalypse Made Easy! scenario locations">running in Vancouver and Kelowna</a>. Each one focuses on a separate skill. Then take your phones and travel to the start point to get… started. How you get there is up to you.</p>
+                <p>Create a team and pick from four different apocalyptian scenarios <a href="#locations" title="Apocalypse Made Easy! scenario locations">running in Vancouver and Kelowna</a>. Each one focuses on a separate skill. Then head to the scenario start point to get... started. How you get there is up to you.</p>
             </div>
         </div>
         <div class="step-image"></div>
@@ -121,11 +105,25 @@
         <div class="step-body">
             <div>
                 <h3><span>3</span>Start surviving!</h3>
-                <p>Work with your team to progress through the challenges and survive the scenario. The swiftest and highest-scoring teams will win useful survival kits filled with stuff we didn't have room for in the garage.</p>
+                <p>Work with your team to progress through the challenges and survive the scenario. The swiftest, most survivingest, and highest-scoring teams will win useful survival kits filled with stuff we didn't have room for in the garage.</p>
             </div>
         </div>
         <div class="step-image"></div>
         <div class="number"><span>3</span></div>
+    </div>
+  </section>
+  <section id="map-container">
+    <div id="map"></div>
+    <div id="cities">
+        <span id="locations">Scenario locations</span>
+        <div class="city">
+            <input type="radio" value="vancouver" id="vancouver" name="city" checked />
+            <label for="vancouver">Vancouver</label>
+        </div>
+        <div class="city">
+            <input type="radio" value="kelowna" id="kelowna" name="city" />
+            <label for="kelowna">Kelowna</label>
+        </div>
     </div>
   </section>
   <section id="faqs">
@@ -134,22 +132,23 @@
         <h2>FAQS</h2>
         <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
             <li class="accordion-item" data-accordion-item>
-                <a href="#" class="accordion-title">How does the training course work?</a>
+                <a href="#" class="accordion-title">How does it work?</a>
                 <div class="accordion-content" data-tab-content>
-                    <p>Create or join a team of 2 to 5 people. Then choose from four different scenarios, each focusing on a separate aspect of doomsday preparedness and/or survival. Take your phones and travel to the starting point. An AI named <code>BORIS</code> will send your first instructions straight to your phone’s web browser. Work together to navigate the scenario and interpret <code>BORIS'</code> confounding statements. And do all of that accurately and promptly, as you’re being judged and timed.</p>
+                    <p>Create or join a team of 2 to 5 people. Then choose from four different scenarios, each focusing on a separate aspect of doomsday preparedness and/or survival. Take your phones and travel to the scenario's starting point. An AI named <code>BORIS</code> will send your first instructions straight to your phone’s web browser. Work together to navigate the scenario and interpret <code>BORIS'</code> confounding statements. And do all of that accurately and promptly, as you’re being judged and timed.</p>
                 </div>
             </li>
             <li class="accordion-item" data-accordion-item>
                 <a href="#" class="accordion-title">Who are the Citizens for a Friendlier Post-Apocalypse?</a>
                 <div class="accordion-content" data-tab-content>
-                    <p>Following a confusing election cycle, we rose to power on our single-issue, semi-transparent platform of optional (mandatory) apocalypse survival training for all citizens. We believe—nay, know—that the world will end soon. And thanks to us, everybody in participating cities will be prepared.</p>
-                    <p>But it's not enough to prepare for the end of the world. Can we make the end of the world a better place than the non-end of the world? Can we make it a friendlier place? Our answer is yes. After much refinement and many, many deadly errors, we have created the most perfectly friendly apocalypse survival training course around. We've made it accessible. We've made Apocalypse Made Easy!</p>   
+                    <p>Following a confusing election cycle, we rose to power on our single-issue platform of optional (mandatory) apocalypse survival training for all citizens. We have it on good authority that the world will end soon. And thanks to us, everybody will be prepared.</p>
+                    <p>But it's not enough to prepare for the end of the world. Can we make the end of the world a better place than the non-end of the world? Can we make it a friendlier place? Our answer is yes.</p>
+                    <p>After much refinement and many, many deadly errors, we have created the most perfectly friendly apocalypse survival training course around. We've made it accessible. We've made Apocalypse Made Easy!</p>   
                 </div>
             </li>
             <li class="accordion-item" data-accordion-item>
-                <a href="#" class="accordion-title">Where is the training course available? And what's it cost?</a>
+                <a href="#" class="accordion-title">Where can I do it? And what's it cost?</a>
                 <div class="accordion-content" data-tab-content>
-                    <p>It hasn't launched yet. But it will soon be available in Vancouver and Kelowna, Canada. If you live anywhere other than those two places, you will sadly perish during the coming apocalypse due to lack of training. However, you may wish to sign up to get notified if the course comes to your city. Assuming the world isn’t over by then. It probably will be.</p>
+                    <p>It hasn't launched yet. But it will soon be available in Vancouver and Kelowna in the locations marked on the map above me here. If you live anywhere other than those two places, you will sadly perish during the coming apocalypse due to lack of training. However, you may wish to sign up to get notified if the course comes to your city. Assuming the world isn’t over by then. It probably will be.</p>
                     <p>Since we're in beta, the cost is <span class="hooray">free!</span> We might even pay you to do it. But you will need mobile data. Each scenario uses about 0.005 gb, which is roughly equal to 1 streamed song. But the true cost is if you <em>don’t</em> participate and are ill-prepared for the end. That cost is astronomical.</p>
                 </div>
             </li>
@@ -166,12 +165,13 @@
     </main>
 
     
-      <div class="site-footer">
+
+    <div class="site-footer">
     <footer class="wrap">
         <div class="section-body">
             <div class="fifty">
                 <h2 id="signup">Sign up!</h2>
-                <p>Receive a complimentary friendly email when we launch the course.</p>
+                <p>Receive a complimentary friendly email when we launch the course. Or, contact us. Backfeed, Head of Citizen Feedback, is standing by at <a href="mailto:info@apocalypsemadeeasy.com">info@apocalypsemadeeasy.com</a>.</p>
                 <div id="mc_embed_signup">
                     <form action="https://apocalypsemadeeasy.us16.list-manage.com/subscribe/post?u=176dbcf360f585cb5fa5e555d&amp;id=b49241b124" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
@@ -181,15 +181,13 @@
                     </div>
                     </form>
                 </div>
-                <h2>Or, contact us!</h2>
-                <p>Backfeed, Head of Citizen Feedback, is standing by at <a href="mailto:info@apocalypsemadeeasy.com">info@apocalypsemadeeasy.com</a>.</p>
             </div>
             <div class="fifty aligned">
                 <img id="backfeed" src="assets/img/backfeed.png" alt="Backfeed, the Feedback Monster" />
             </div>
         </div>
     </footer>
-    <div id="fourth-wall"></div>
+    <div id="first" class="fourth-wall"></div>
     <div id="section-funding">
         <p>Apocalypse Made Easy! is a Social Innovators Challenge Project funded by the <a href="https://ca.movember.com" target="_blank">Movember Foundation</a>. It was developed with support from the University of British Columbia's <a href="http://menshealthresearch.ubc.ca" target="_blank">Men's Health Research Program</a> and <a href="https://nursing.ubc.ca" target="_blank">School of Nursing</a>.</p>
         <div id="logos">
@@ -198,7 +196,14 @@
             <img height="70" width="70" class="ubc" src="assets/img/ubc.png" alt="Supported by the University of British Columbia" />
         </div>
     </div>
+    <div id="second" class="fourth-wall"></div>
 </div>
+
+<div id="east-agony-lake">
+    <img src="/assets/img/scenes/east-agony-lake.jpg" alt="Crossing East Agony Lake | Apocalypse Made Easy! | Art by Rita Fei" />
+</div>
+
+
     
 
   </body>

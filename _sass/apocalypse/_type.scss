@@ -21,7 +21,7 @@ h1 {
         font-size: 3.4em;
     }
     @include variable-query(1080px) {
-        font-size: 5em;
+        font-size: 5.5em;
     }
 }
 
@@ -54,8 +54,8 @@ h2, h3 {
 }
 
 h2#signup {
-    padding-top: 92px;
-    margin-top: -92px;
+    padding-top: 140px;
+    margin-top: -140px;
 }
 
 h3 span {
@@ -76,6 +76,7 @@ h3 span {
 }
 
 .info-content {
+    position: relative;
     h3 {
         font-size: 1.7em;
         margin-top: 0.25em;
@@ -90,25 +91,28 @@ p {
     line-height: 1.8;
 }
 
-#fourth-wall {
-    background: $red;
+.fourth-wall {
     overflow: hidden;
-    transform: rotate(-2deg);
-    margin-top: 4rem;
-    box-shadow: 0 0 1px $red;
+    background: darken($black, 5%);
+    box-shadow: 0 0 1px $black;
         &:after {
             content: '4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach 4th Wall Breach';
             display: block;
             height: 100%;
             width: 100%;
-            color: $white;
+            color: lighten($black, 5%);
             text-transform: uppercase;
             font-family: $header-font;
             font-size: 0.85em;
             white-space: nowrap;
             margin: 0.5rem 0.5rem 0.5rem -1rem;
-            -webkit-animation: fade 0.9s infinite alternate;
-            animation: fade 0.9s infinite alternate;
+        }
+        &#first {
+            margin-top: 4rem;
+            transform: rotate(-3deg);
+        }
+        &#second {
+            margin-top: 1rem;
         }
 }
 
@@ -149,6 +153,16 @@ span.hooray {
     border-radius: 2px;
     -webkit-animation: 2.2s infinite letter-color-explosion;
     animation: 2.2s infinite letter-color-explosion;
+}
+
+span.date {
+    font-size: 0.9em;
+    font-family: monospace;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+    display: inline-block;
+    background: $black;
+    color: $white;
 }
 
 code {

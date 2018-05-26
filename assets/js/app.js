@@ -10,6 +10,15 @@ $(document).on('ready', function() {
     // Initialize Foundation
     $(document).foundation();
 
+    let yesteryesterday = new Date();
+    yesteryesterday.setDate(yesteryesterday.getDate() - 2);
+    const day = yesteryesterday.getDate();
+    const locale = 'en-us';
+    const month = yesteryesterday.toLocaleString(locale, { month: "long" });
+    const year = yesteryesterday.getFullYear();
+    
+    $('.date').text(' ' + month + ' ' + day + ', ' + year + ', ');
+
 });
 
 // If the user changes cities, reinitialize the map

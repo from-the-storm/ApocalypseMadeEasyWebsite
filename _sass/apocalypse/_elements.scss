@@ -87,26 +87,32 @@ img {
             }
     }
     #cities {
-        padding-top: 82px;
-        margin-top: -82px;
         position: absolute;
         top: 1rem;
         left: 1rem;
         right: 1rem;
+        padding: 0 0.5rem 0.5rem;
         z-index: 2;
-        border-radius: 2px;
+        border-radius: 3px;
         text-align: center;
+        color: $white;
             @include media-query {
                 top: 2rem;
                 left: 2rem;
                 right: auto;
+                background: lighten($black, 10%);
             }
             span {
                 display: none;
-                font-size: 0.9em;
-                margin-bottom: 0.75rem;
+                font-size: 0.8em;
+                padding: 0.5rem;
                     @include media-query {
                         display: inline-block;
+                    }
+                    &#locations {
+                        // Offset scrollto
+                        padding-top: 80px;
+                        margin-top: -80px;
                     }
             }
             .city {
@@ -116,9 +122,8 @@ img {
                 width: 155px;
                 height: 40px;
                 text-align: center;
-                border-radius: 2px;
-                border: 1px solid darken($white, 15%);
                 background: $white;
+                border-radius: 2px;
                     label, input {
                         display: block;
                         position: absolute;
@@ -140,13 +145,22 @@ img {
                         cursor: pointer;
                         line-height: 40px;
                         color: $black;
+                        border-radius: 2px;
                     }
-                    &:first-of-type {
-                        border-bottom: 0;
+                    &:first-of-type, &:first-of-type label {
+                        border-bottom-left-radius: 0;
+                        border-bottom-right-radius: 0;
                     }
-                    &:last-of-type {
-                        border-top: 0;
+                    &:last-of-type, &:last-of-type label {
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
                     }
             }
+    }
+}
+
+#east-agony-lake {
+    img {
+        display: block;
     }
 }

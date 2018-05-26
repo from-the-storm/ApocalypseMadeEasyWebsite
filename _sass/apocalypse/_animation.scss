@@ -1,32 +1,3 @@
-.boris {
-	.boris-container {
-		background-image: url("img/boris-loading-atlas.png");
-		animation: spinning 0.8s steps(9) infinite;
-			&.init {
-				background-image: url("img/boris-loaded-atlas.png");
-				animation: initialized 0.8s steps(7) infinite;
-			}
-	}
-}
-
-@keyframes spinning {
-	from {
-		background-position: 0;
-	}
-	to {
-		background-position: -900px;
-	}
-}
-
-@keyframes initialized {
-	from {
-		background-position: 0;
-	}
-	to {
-		background-position: -700px;
-	}
-}
-
 @-webkit-keyframes color-explosion {
 	0%, 100% { background-color: $red; }
 	20% { background-color: $blue; } 
@@ -57,28 +28,4 @@
 	40% { color: $orange; } 
 	60% { color: $green; }
 	80% { color: $purple; }
-}
-
-@-webkit-keyframes greet {
-	0% { -webkit-transform: scale(0.1, 0.1); transform: scale(0.1, 0.1); opacity: 0; }
-	20% { -webkit-transform: scale(0.6, 0.6); transform: scale(0.6, 0.6); opacity: 1;}
-	40% { -webkit-transform: scale(0.1, 0.1); transform: scale(0.1, 0.1); opacity: 0;}
-	100% { -webkit-transform: scale(1, 1); transform: scale(1, 1); opacity: 1; }
-}
-
-@keyframes greet {
-	0% { transform: scale(0.1, 0.1); opacity: 0; }
-	20% { transform: scale(0.6, 0.6); opacity: 1;}
-	40% { transform: scale(0.1, 0.1); opacity: 0;}
-	100% { transform: scale(1, 1); opacity: 1; }
-}
-
-@-webkit-keyframes fade {
-	0% { opacity: 0; }
-	100% { opacity: 1; } 
-}
-
-@keyframes fade {
-	0% { opacity: 0; }
-	100% { opacity: 1; } 
 }

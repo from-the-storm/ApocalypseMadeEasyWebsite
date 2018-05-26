@@ -7,8 +7,12 @@
         section {
             width: 100%;
             &#selections {
+                position: relative;
                 flex: 1;
                 background-image: linear-gradient(to right, lighten($black, 3%), lighten($black, 3%) 50%, lighten($black, 5%) 50%); 
+                @media all and (max-width: 760px) {
+                    background: lighten($black, 5%);
+                }
                     .section-body {
                         height: 100%;
                         flex-flow: wrap;
@@ -17,27 +21,72 @@
                             max-width: 700px;
                             width: 100%;
                                 @include media-query {
-                                    max-width: 500px;
+                                    max-width: 600px;
                                 }
                         }
                         .buttons {
                             justify-content: space-around;
+                            align-items: center;
                             display: flex;
                             width: 100%;
-                            padding: 2rem 0;
+                            padding: 1rem 0;
                                 div {
                                     a {
                                         display: inline-block;
-                                        background: $white;
                                         font-family: $header-font;
-                                        color: $black;
+                                        color: $white;
+                                        border: 1px solid $white;
                                         text-decoration: none;
                                         padding: 1rem 1.25rem;
                                         font-size: 28px;
                                         text-transform: uppercase;
                                         min-width: 220px;
                                         text-align: center;
+                                        position: relative;
+                                        height: 77px;
+                                            &#info, &#start {
+                                                &:after {
+                                                    opacity: 0;
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    text-align: center;
+                                                    top: 0;
+                                                    left: 0;
+                                                    font-size: 2.8em;
+                                                    line-height: 72px;
+                                                    transition: opacity 0.4s ease;
+                                                }
+                                                &:hover {
+                                                    &:after {
+                                                        opacity: 1;
+                                                    }
+                                                    animation-duration: 0.4s;
+                                                    animation-timing-function: ease-in-out;
+                                                    animation-fill-mode: forwards;
+                                                    animation-iteration-count: infinite;
+                                                    animation-name: jittery;
+                                                }
+                                            }
+                                            &#info:after {
+                                                content: '?';
+                                                background: $black;
+                                            }
+                                            &#start:after {
+                                                content: '!';
+                                                background: $white;
+                                            }
                                     }
+                                    &:last-child a {
+                                        background: $white;
+                                        color: $black;
+                                    }
+                                }
+                                @media all and (max-width: 760px) {
+                                    flex-flow: column;
+                                        div:last-child {
+                                            margin-top: 2rem;
+                                        }
                                 }
                         }
                     }   
@@ -49,7 +98,7 @@
                     header {
                         max-width: $width;
                         margin: 0 auto;
-                        padding: 3rem 1rem;
+                        padding: 3rem 2rem;
                             h1 {
                                 display: inline;
                                 margin-right: 0.5rem;
@@ -61,5 +110,38 @@
                     }
             }
         }
+    }
+}
+
+@keyframes jittery {
+    10% {
+        transform: translate(-2px, -3px) scale(1.01, 1.01);
+    }
+    20% {
+        transform: translate(3px, 2px) scale(.99, .99);
+    }
+    30% {
+        transform: translate(-4px, -5px) scale(1.01, 1.01);
+    }
+    40% {
+        transform: translate(2px, 3px) scale(1, 1);
+    }
+    50% {
+        transform: translate(-1px, -2px) scale(.98, .98);
+    }
+    60% {
+        transform: translate(0px, 3px) scale(1.02, 1.02);
+    }
+    70% {
+        transform: translate(-2px, -4px) scale(1, 1);
+    }
+    80% {
+        transform: translate(3px, 5px) scale(.99, .99);
+    }
+    90% {
+        transform: translate(-5px, -3px) scale(1.1, 1.1);
+    }
+    100% {
+        transform: translate(3px, 1px) scale(.95, .95);
     }
 }
