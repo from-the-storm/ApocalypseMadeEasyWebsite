@@ -242,9 +242,12 @@ section#faqs .ad-nauseum {
         }
         @include media-query {
             padding: 3rem 0 0;
+                .fifty.aligned {
+                    padding-top: 0;
+                }
         }
         #section-funding {
-            padding: 4.5rem 2rem 2rem;
+            padding: 2rem;
             margin: 0 auto;
             color: darken($white, 30%);
             #logos {
@@ -253,6 +256,9 @@ section#faqs .ad-nauseum {
                     img {
                         margin: 1rem 1rem 0;
                     }
+            }
+            @include media-query {
+                padding: 4.5rem 2rem 2rem;
             }
             @include variable-query(1160px) {
                 display: flex;

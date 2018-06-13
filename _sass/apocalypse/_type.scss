@@ -108,8 +108,11 @@ p {
             margin: 0.5rem 0.5rem 0.5rem -1rem;
         }
         &#first {
-            margin-top: 4rem;
+            margin-top: 2rem;
             transform: rotate(-3deg);
+                @include media-query {
+                    margin-top: 4rem;
+                }
         }
         &#second {
             margin-top: 1rem;
