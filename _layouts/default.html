@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body{% if page.url == '/press' %} class="press"{% endif %}>
+  <body{% if page.url == '/press' %} class="press"{% endif %}{% if page.url == '/' %} class="landing"{% endif %}>
 
     {% include header.html %}
 
@@ -11,7 +11,7 @@
         {{ content }}
     </main>
 
-    {% if page.url == '/' %}
+    {% if page.url == '/about' %}
 
     {% include footer.html %}
 

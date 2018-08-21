@@ -823,7 +823,9 @@ img {
         border-top-right-radius: 0; }
 
 #east-agony-lake img {
-  display: block; }
+  display: block;
+  width: 100%;
+  max-width: none; }
 
 #boris-alert-system {
   position: absolute;
@@ -897,7 +899,7 @@ img {
           align-items: center;
           display: flex;
           width: 100%;
-          padding: 1rem 0; }
+          padding: 2rem 0 1rem; }
           .landing article section#selections .section-body .buttons div a {
             display: inline-block;
             font-family: "Kanit", sans-serif;
@@ -907,7 +909,7 @@ img {
             padding: 1rem 1.25rem;
             font-size: 28px;
             text-transform: uppercase;
-            min-width: 220px;
+            min-width: 240px;
             text-align: center;
             position: relative;
             height: 77px; }
@@ -955,7 +957,7 @@ img {
         .landing article section#description header h1 {
           display: inline;
           margin-right: 0.5rem;
-          font-size: 1em; }
+          font-size: 1.2em; }
         .landing article section#description header p {
           display: inline; }
 
@@ -1188,6 +1190,12 @@ span.date {
   display: inline-block;
   background: #232323;
   color: #f3f3f3; }
+  span.date.landing {
+    font-family: "Noto Sans", sans-serif;
+    padding: 0;
+    text-transform: none;
+    background: none;
+    color: silver; }
 
 code {
   text-transform: uppercase; }

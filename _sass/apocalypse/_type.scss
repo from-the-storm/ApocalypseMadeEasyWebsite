@@ -166,6 +166,13 @@ span.date {
     display: inline-block;
     background: $black;
     color: $white;
+        &.landing {
+            font-family: $body-font;
+            padding: 0;
+            text-transform: none;
+            background: none;
+            color: darken($white, 20%);
+        }
 }
 
 code {
