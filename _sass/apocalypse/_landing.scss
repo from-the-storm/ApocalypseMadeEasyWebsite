@@ -67,6 +67,9 @@
                                                     animation-iteration-count: infinite;
                                                     animation-name: jittery;
                                                 }
+                                                &:active {
+                                                    animation: none;
+                                                }
                                             }
                                             &#info:after {
                                                 content: '?';

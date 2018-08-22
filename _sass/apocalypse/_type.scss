@@ -152,10 +152,11 @@ p {
 
 span.hooray {
     background: $black;
+    color: $green;
     padding: 0 0.25rem;
     border-radius: 2px;
-    -webkit-animation: 2.2s infinite letter-color-explosion;
-    animation: 2.2s infinite letter-color-explosion;
+    -webkit-animation: 2.2s 14 letter-color-explosion;
+    animation: 2.2s 14 letter-color-explosion;
 }
 
 span.date {
