@@ -928,7 +928,7 @@ img {
               animation-duration: 0.4s;
               animation-timing-function: ease-in-out;
               animation-fill-mode: forwards;
-              animation-iteration-count: infinite;
+              animation-iteration-count: 25;
               animation-name: jittery; }
               .landing article section#selections .section-body .buttons div a#info:hover:after, .landing article section#selections .section-body .buttons div a#start:hover:after {
                 opacity: 1; }

@@ -39,18 +39,18 @@ function initMap() {
                         
     // Info for Vancouver Locations
     var yvrWindowContent = [
-        ['<div class="info-content">' + '<h3>GROUP DYNAMICS</h3>' + '<p>At UBC/Main Mall</p>' + '</div>'],
-        ['<div class="info-content">' + '<h3>WATER</h3>' + '<p>At UBC/Pacific Spirit Park</p>' + '</div>'],
+        ['<div class="info-content">' + '<h3>GROUP SURVIVAL</h3>' + '<p>At UBC/Main Mall</p>' + '</div>'],
+        ['<div class="info-content">' + '<h3>FINDING WATER</h3>' + '<p>At UBC/Pacific Spirit Park</p>' + '</div>'],
         ['<div class="info-content">' + '<h3>EARTHQUAKE PREP</h3>' + '<p>SE False Creek</p>' + '</div>'],
         ['<div class="info-content">' + '<h3>LIVING OFF THE LAND</h3>' + '<p>At Stanley Park</p>' + '</div>']
     ];
 
     // Info for Kelowna Locations
     var ylwWindowContent = [
-        ['<div class="info-content">' + '<h3>WATER</h3>' + '<p>Downtown/Cultural District</p>' + '</div>'],
+        ['<div class="info-content">' + '<h3>FINDING WATER</h3>' + '<p>Downtown/Cultural District</p>' + '</div>'],
         ['<div class="info-content">' + '<h3>FOREST FIRE/DROUGHT</h3>' + '<p>At Knox Mountain Park</p>' + '</div>'],
         ['<div class="info-content">' + '<h3>LIVING OFF THE LAND</h3>' + '<p>At Mission Creek Park</p>' + '</div>'],
-        ['<div class="info-content">' + '<h3>GROUP DYNAMICS</h3>' + '<p>At UBC Okanagan</p>' + '</div>']
+        ['<div class="info-content">' + '<h3>GROUP SURVIVAL</h3>' + '<p>At UBC Okanagan</p>' + '</div>']
     ];
         
     // Display multiple markers on a map
