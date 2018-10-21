@@ -169,15 +169,16 @@ img {
 
 #boris-alert-system {
     position: absolute;
-    bottom: 5rem;
+    bottom: 6rem;
     right: 0;
     height: 80px;
     width: 80px;
     background-image: url('img/boris-alert-system.png');
     background-repeat: no-repeat;
-    -webkit-animation: 0.6s 3s forwards slide, 0.6s 3s steps(9) 4 spinning, 0.7s 5.4s steps(8) forwards initialized;
-    animation: 0.6s 3s forwards slide, 0.6s 3s steps(9) 4 spinning, 0.7s 5.4s steps(8) forwards initialized;
+    -webkit-animation: 0.6s 1s forwards slide, 0.6s 1s steps(9) 4 spinning, 0.7s 3.4s steps(8) forwards initialized;
+    animation: 0.6s 1s forwards slide, 0.6s 1s steps(9) 4 spinning, 0.7s 3.4s steps(8) forwards initialized;
     transform: rotate(-90deg) translateY(140px);
+    z-index: 2;
         a {
             position: absolute;
             bottom: 100%;
@@ -185,15 +186,15 @@ img {
             background: $black;
             width: 170px;
             text-transform: uppercase;
-            text-decoration: none;
             font-family: monospace;
             text-align: center;
             border-radius: 1px;
             padding: 0.5rem 0;
             opacity: 0;
             visibility: hidden;
-            -webkit-animation: 0.3s 6.1s forwards pop;
-            animation: 0.3s 6.1s forwards pop;
+            -webkit-animation: 0.3s 4.1s forwards pop;
+            animation: 0.3s 4.1s forwards pop;
+            border: 1px solid $white;
                 &:after {
                     content: '';
                     position: absolute;
@@ -209,7 +210,10 @@ img {
                     margin-bottom: -16px;
                 }
                 &:hover {
-                    text-decoration: underline;
+                    background: $purple;
+                        &:after {
+                            border-top-color: $purple;
+                        }
                 }
         }
 }
