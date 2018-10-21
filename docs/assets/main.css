@@ -1368,9 +1368,10 @@ ul#stats {
   flex: 2; }
 .win-things #register {
   color: #f3f3f3; }
-.win-things #prize-criteria {
-  display: flex;
-  align-items: flex-start; }
+@media screen and (min-width: 40em) {
+  .win-things #prize-criteria {
+    display: flex;
+    align-items: flex-start; } }
 .win-things .criteria {
   font-size: 2.4em;
   line-height: 1.3;
