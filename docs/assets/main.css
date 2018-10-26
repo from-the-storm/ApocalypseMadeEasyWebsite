@@ -695,6 +695,15 @@ section#faqs .ad-nauseum {
 a {
   color: #f3f3f3;
   transition: color 0.2s; }
+  a.inline-button {
+    background: #232323;
+    display: inline-block;
+    margin: 1rem 0;
+    font-family: "Kanit", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 2px; }
 
 .step-body a:hover, .section-body a:hover, #section-funding a:hover {
   color: #f66f5c; }
@@ -841,9 +850,11 @@ img {
   z-index: 2; }
   #boris-alert-system a {
     position: absolute;
+    color: #232323;
+    font-weight: bold;
     bottom: 100%;
     left: 70%;
-    background: #232323;
+    background: #39fca8;
     width: 170px;
     text-transform: uppercase;
     font-family: monospace;
@@ -863,15 +874,15 @@ img {
       width: 0;
       height: 0;
       border: 16px solid transparent;
-      border-top-color: #232323;
+      border-top-color: #39fca8;
       border-bottom: 0;
       border-left: 0;
       margin-left: -8px;
       margin-bottom: -16px; }
     #boris-alert-system a:hover {
-      background: #7986cb; }
+      background: #07fb92; }
       #boris-alert-system a:hover:after {
-        border-top-color: #7986cb; }
+        border-top-color: #07fb92; }
 
 .landing article {
   min-height: 100vh;
