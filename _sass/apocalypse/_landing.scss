@@ -1,7 +1,6 @@
 .landing {
     article {
         min-height: 100vh;
-        background: $black;
         display: flex;
         flex-flow: column;
         section {
@@ -72,7 +71,7 @@
                                                 }
                                             }
                                             &#info:after {
-                                                content: '?';
+                                                content: '!';
                                                 background: $black;
                                             }
                                             &#start:after {

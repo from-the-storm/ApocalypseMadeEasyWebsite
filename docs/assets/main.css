@@ -639,7 +639,7 @@ section#faqs {
   transform: rotate(-7deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  opacity: 0.025; }
+  opacity: 0.04; }
   .ad-nauseum:after {
     content: "";
     position: absolute;
@@ -886,7 +886,6 @@ img {
 
 .landing article {
   min-height: 100vh;
-  background: #232323;
   display: flex;
   flex-flow: column; }
   .landing article section {
@@ -949,7 +948,7 @@ img {
             .landing article section#selections .section-body .buttons div a#info:active, .landing article section#selections .section-body .buttons div a#start:active {
               animation: none; }
             .landing article section#selections .section-body .buttons div a#info:after {
-              content: '?';
+              content: '!';
               background: #232323; }
             .landing article section#selections .section-body .buttons div a#start:after {
               content: '!';
