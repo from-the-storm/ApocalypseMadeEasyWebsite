@@ -639,7 +639,7 @@ section#faqs {
   transform: rotate(-7deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  opacity: 0.04; }
+  opacity: 0.025; }
   .ad-nauseum:after {
     content: "";
     position: absolute;
