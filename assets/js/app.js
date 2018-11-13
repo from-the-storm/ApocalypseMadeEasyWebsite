@@ -27,7 +27,7 @@ $('#cities').change(initMap);
 // Social ads tracking
 $('.start-playing').click(function() {
   fbq('track', 'ViewContent');
-}
+});
 
 // Smooth scrolling from CSS Tricks
 // Select all links with hashes
