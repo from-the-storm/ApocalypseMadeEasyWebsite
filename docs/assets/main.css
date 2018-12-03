@@ -724,13 +724,14 @@ img {
   img.mov.dt {
     display: none; }
   img.mov.mb {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     height: 60px;
     width: 60px; }
-  @media screen and (min-width: 470px) {
-    img.mov.mb {
-      height: 80px;
-      width: 80px; } }
+    @media screen and (min-width: 470px) {
+      img.mov.mb {
+        margin-left: 1.5rem;
+        height: 80px;
+        width: 80px; } }
   @media screen and (min-width: 700px) {
     img.mov.dt {
       display: block; }
@@ -1011,39 +1012,49 @@ img {
   background: #232323;
   padding: 0 0.5rem;
   border-bottom: 2px solid #636363; }
-  .site-header a.button {
-    font-family: "Kanit", sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
-    padding: 0.35rem 1rem;
-    margin: 0.75rem 0.25rem;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 2px;
-    float: left; }
-    .site-header a.button:hover {
-      color: silver; }
-    .site-header a.button#register {
-      background: #f3f3f3;
-      float: right;
-      color: #232323;
-      transition: color 0s; }
-      .site-header a.button#register:hover {
-        color: #f3f3f3;
-        -webkit-animation: 2.2s 10 color-explosion;
-        animation: 2.2s 10 color-explosion; }
-    .site-header a.button#where-to-play {
-      display: none; }
-      @media screen and (min-width: 470px) {
-        .site-header a.button#where-to-play {
-          display: inline; } }
-    @media screen and (min-width: 40em) {
-      .site-header a.button {
-        font-size: 1.25em;
-        margin: 0.75rem 0.5rem; } }
   @media screen and (min-width: 40em) {
     .site-header {
       padding: 0 3rem; } }
+
+a.button {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 0.35rem 1rem;
+  margin: 0.75rem 0.25rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  float: left; }
+  a.button:hover {
+    color: silver; }
+  a.button#register {
+    background: #f3f3f3;
+    float: right;
+    color: #232323;
+    transition: color 0s; }
+    a.button#register:hover {
+      color: #f3f3f3;
+      -webkit-animation: 2.2s 10 color-explosion;
+      animation: 2.2s 10 color-explosion; }
+  a.button#where-to-play {
+    display: none; }
+    @media screen and (min-width: 470px) {
+      a.button#where-to-play {
+        display: inline; } }
+  a.button#call-to-action {
+    background: #232323;
+    margin: 1.25rem 0 0;
+    float: none;
+    display: inline-block; }
+    a.button#call-to-action:hover {
+      color: #f3f3f3;
+      -webkit-animation: 2.2s 10 color-explosion;
+      animation: 2.2s 10 color-explosion; }
+  @media screen and (min-width: 40em) {
+    a.button {
+      font-size: 1.25em;
+      margin: 0.75rem 0.5rem; } }
 
 .accordion {
   margin-top: 1rem;

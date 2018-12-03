@@ -1,7 +1,7 @@
 {% if page.url == '/' or page.url == '/win-things' %}
 <header class="site-header" role="banner">
-  <a class="button" href="#questions" title="Frequently Asked Questions">FAQs</a>
-  <a id="where-to-play" class="button" href="#locations" title="Where to Play">Where to Play</a>
-  <a id="register" class="button start-playing" rel="noopener noreferrer" target="_blank" href="https://play.apocalypsemadeeasy.com" title="Start Playing">Start Playing</a>
+  <a onclick="ga('send', 'event', 'Click', 'Header', 'FAQs');" class="button" href="#questions" title="Frequently Asked Questions">FAQs</a>
+  <a onclick="ga('send', 'event', 'Click', 'Header', 'Where to Play');" id="where-to-play" class="button" href="#locations" title="Where to Play">Where to Play</a>
+  <a onclick="ga('send', 'event', 'Click', 'Header', 'Start Playing');" id="register" class="button start-playing" rel="noopener noreferrer" target="_blank" href="https://play.apocalypsemadeeasy.com" title="Start Playing">Start Playing</a>
 </header>
 {% endif %}

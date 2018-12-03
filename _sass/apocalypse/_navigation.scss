@@ -7,42 +7,54 @@
     background: $black;
     padding: 0 0.5rem;
     border-bottom: 2px solid lighten($black, 25%);
-        a.button {
-            font-family: $header-font;
-            text-transform: uppercase;
-            font-size: 1em;
-            padding: 0.35rem 1rem;
-            margin: 0.75rem 0.25rem;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 2px;
-            float: left;
+        @include media-query {
+            padding: 0 3rem;
+        }
+}
+
+a.button {
+    font-family: $header-font;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 0.35rem 1rem;
+    margin: 0.75rem 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    float: left;
+        &:hover {
+            color: darken($white, 20%);
+        }
+        &#register {
+            background: $white;
+            float: right;
+            color: $black;
+            transition: color 0s;
+            &:hover {
+                color: $white;
+                -webkit-animation: 2.2s 10 color-explosion;
+                animation: 2.2s 10 color-explosion;
+            }
+        }
+        &#where-to-play {
+            display: none;
+            @include variable-query(470px) {
+                display: inline;
+            }
+        }
+        &#call-to-action {
+            background: $black;
+            margin: 1.25rem 0 0;
+            float: none;
+            display: inline-block;
                 &:hover {
-                    color: darken($white, 20%);
-                }
-                &#register {
-                    background: $white;
-                    float: right;
-                    color: $black;
-                    transition: color 0s;
-                    &:hover {
-                        color: $white;
-                        -webkit-animation: 2.2s 10 color-explosion;
-                        animation: 2.2s 10 color-explosion;
-                    }
-                }
-                &#where-to-play {
-                    display: none;
-                    @include variable-query(470px) {
-                        display: inline;
-                    }
-                }
-                @include media-query {
-                    font-size: 1.25em;
-                    margin: 0.75rem 0.5rem;
+                    color: $white;
+                    -webkit-animation: 2.2s 10 color-explosion;
+                    animation: 2.2s 10 color-explosion;
                 }
         }
         @include media-query {
-            padding: 0 3rem;
+            font-size: 1.25em;
+            margin: 0.75rem 0.5rem;
         }
 }

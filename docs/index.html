@@ -46,9 +46,9 @@
 
     
 <header class="site-header" role="banner">
-  <a class="button" href="#questions" title="Frequently Asked Questions">FAQs</a>
-  <a id="where-to-play" class="button" href="#locations" title="Where to Play">Where to Play</a>
-  <a id="register" class="button start-playing" rel="noopener noreferrer" target="_blank" href="https://play.apocalypsemadeeasy.com" title="Start Playing">Start Playing</a>
+  <a onclick="ga('send', 'event', 'Click', 'Header', 'FAQs');" class="button" href="#questions" title="Frequently Asked Questions">FAQs</a>
+  <a onclick="ga('send', 'event', 'Click', 'Header', 'Where to Play');" id="where-to-play" class="button" href="#locations" title="Where to Play">Where to Play</a>
+  <a onclick="ga('send', 'event', 'Click', 'Header', 'Start Playing');" id="register" class="button start-playing" rel="noopener noreferrer" target="_blank" href="https://play.apocalypsemadeeasy.com" title="Start Playing">Start Playing</a>
 </header>
 
 
@@ -64,9 +64,10 @@
                 <img height="80" width="80" class="mov mb" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
             <div class="about">
-                <h2>is an outdoor, team-based apocalypse survival training course that runs in your phone's browser. And as of <span class="date"></span> it's no longer very deadly.</h2>
+                <h2>is an outdoor, team-based apocalypse survival training game that runs in your phone's browser. The beta's now open in  Vancouver.</h2>
                 <img height="80" width="80" class="mov dt" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
+            <div><a onclick="ga('send', 'event', 'Click', 'Call to Action', 'Start Playing');" id="call-to-action" class="button start-playing" rel="noopener noreferrer" target="_blank" href="https://play.apocalypsemadeeasy.com" title="Start Playing">Start Playing</a></div>
           </header>
       </div>
       <div class="center">
