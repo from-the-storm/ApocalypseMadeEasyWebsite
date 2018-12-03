@@ -1046,11 +1046,14 @@ a.button {
     background: #232323;
     margin: 1.25rem 0 0;
     float: none;
-    display: inline-block; }
+    display: none; }
     a.button#call-to-action:hover {
       color: #f3f3f3;
       -webkit-animation: 2.2s 10 color-explosion;
       animation: 2.2s 10 color-explosion; }
+    @media screen and (min-width: 40em) {
+      a.button#call-to-action {
+        display: inline-block; } }
   @media screen and (min-width: 40em) {
     a.button {
       font-size: 1.25em;
