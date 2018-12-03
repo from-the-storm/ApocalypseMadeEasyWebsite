@@ -4,19 +4,45 @@
     left: 0;
     width: 100%;
     z-index: 5;
-    text-align: right;
+    background: $black;
+    padding: 0 0.5rem;
+    border-bottom: 2px solid lighten($black, 25%);
         a.button {
-            display: block;
-            background: $black;
             font-family: $header-font;
             text-transform: uppercase;
-            font-size: 1.3em;
-            padding: 0.5rem;
+            font-size: 1em;
+            padding: 0.35rem 1rem;
+            margin: 0.75rem 0.25rem;
             text-align: center;
             text-decoration: none;
+            border-radius: 2px;
+            float: left;
                 &:hover {
-                    -webkit-animation: 2.2s infinite color-explosion;
-                    animation: 2.2s infinite color-explosion;
-                }        
+                    color: darken($white, 20%);
+                }
+                &#register {
+                    background: $white;
+                    float: right;
+                    color: $black;
+                    transition: color 0s;
+                    &:hover {
+                        color: $white;
+                        -webkit-animation: 2.2s 10 color-explosion;
+                        animation: 2.2s 10 color-explosion;
+                    }
+                }
+                &#where-to-play {
+                    display: none;
+                    @include variable-query(470px) {
+                        display: inline;
+                    }
+                }
+                @include media-query {
+                    font-size: 1.25em;
+                    margin: 0.75rem 0.5rem;
+                }
+        }
+        @include media-query {
+            padding: 0 3rem;
         }
 }

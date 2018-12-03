@@ -431,8 +431,8 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   transition: all 0.25s ease-in-out 0s; }
   #mc_embed_signup .button:hover {
     cursor: pointer;
-    -webkit-animation: 2.2s infinite color-explosion;
-    animation: 2.2s infinite color-explosion; }
+    -webkit-animation: 2.2s 14 color-explosion;
+    animation: 2.2s 14 color-explosion; }
   @media screen and (min-width: 1000px) {
     #mc_embed_signup .button {
       border-bottom: 2px solid #f66f5c;
@@ -467,12 +467,15 @@ html {
 
 body {
   background: #f3f3f3;
-  padding-top: 50px; }
+  padding-top: 63px; }
   body#four-oh-six-minus-two {
     background: #000000;
     padding-top: 0; }
   body.press, body.landing {
     padding-top: 0; }
+  @media screen and (min-width: 40em) {
+    body {
+      padding-top: 70px; } }
 
 .section-body {
   max-width: 36em;
@@ -528,15 +531,14 @@ body {
 section#welcome {
   position: relative;
   overflow: hidden;
-  padding: 1.5rem 0; }
+  padding: 0; }
   section#welcome header {
-    margin-bottom: 1rem;
     margin: 0 auto 1rem; }
     @media screen and (min-width: 40em) {
       section#welcome header {
         margin: 0; } }
   section#welcome .center {
-    padding: 1.5rem; }
+    padding: 0.5rem; }
     @media screen and (min-width: 700px) {
       section#welcome .center {
         padding: 1.5rem 1.5rem 4rem 1.5rem; } }
@@ -549,7 +551,7 @@ section#getting-started {
   color: #f3f3f3; }
   section#getting-started .step {
     position: relative;
-    padding: 2rem 0 0; }
+    padding: 1.25rem 0 0; }
     @media screen and (min-width: 880px) {
       section#getting-started .step {
         padding: 0;
@@ -627,6 +629,10 @@ section#getting-started {
 section#faqs {
   position: relative;
   overflow: hidden; }
+
+h2#questions {
+  padding-top: 80px;
+  margin-top: -80px; }
 
 .ad-nauseum {
   position: absolute;
@@ -1003,19 +1009,42 @@ img {
   left: 0;
   width: 100%;
   z-index: 5;
-  text-align: right; }
+  background: #232323;
+  padding: 0 0.5rem;
+  border-bottom: 2px solid #636363; }
   .site-header a.button {
-    display: block;
-    background: #232323;
     font-family: "Kanit", sans-serif;
     text-transform: uppercase;
-    font-size: 1.3em;
-    padding: 0.5rem;
+    font-size: 1em;
+    padding: 0.35rem 1rem;
+    margin: 0.75rem 0.25rem;
     text-align: center;
-    text-decoration: none; }
+    text-decoration: none;
+    border-radius: 2px;
+    float: left; }
     .site-header a.button:hover {
-      -webkit-animation: 2.2s infinite color-explosion;
-      animation: 2.2s infinite color-explosion; }
+      color: silver; }
+    .site-header a.button#register {
+      background: #f3f3f3;
+      float: right;
+      color: #232323;
+      transition: color 0s; }
+      .site-header a.button#register:hover {
+        color: #f3f3f3;
+        -webkit-animation: 2.2s 10 color-explosion;
+        animation: 2.2s 10 color-explosion; }
+    .site-header a.button#where-to-play {
+      display: none; }
+      @media screen and (min-width: 470px) {
+        .site-header a.button#where-to-play {
+          display: inline; } }
+    @media screen and (min-width: 40em) {
+      .site-header a.button {
+        font-size: 1.25em;
+        margin: 0.75rem 0.5rem; } }
+  @media screen and (min-width: 40em) {
+    .site-header {
+      padding: 0 3rem; } }
 
 .accordion {
   margin-top: 1rem;
@@ -1052,10 +1081,17 @@ img {
       content: '\2013'; }
     .accordion li.accordion-item .accordion-content {
       display: none;
-      padding: 0 2rem 0.5rem;
+      padding: 0 1rem 0.5rem;
       background: #dadada; }
+      @media screen and (min-width: 40em) {
+        .accordion li.accordion-item .accordion-content {
+          padding: 0 2rem 0.5rem; } }
       .accordion li.accordion-item .accordion-content p {
-        margin-top: 0; }
+        margin-top: 0;
+        font-size: 0.9em; }
+        @media screen and (min-width: 40em) {
+          .accordion li.accordion-item .accordion-content p {
+            font-size: 1.1em; } }
 
 body {
   font-family: "Noto Sans", sans-serif;
@@ -1113,8 +1149,7 @@ h2#signup {
 h3 span {
   display: inline-block;
   font-size: 1.5em;
-  margin-right: 1rem;
-  border-bottom: 5px solid; }
+  margin-right: 1rem; }
   @media screen and (min-width: 540px) {
     h3 span {
       font-size: 2.2em; } }
@@ -1199,13 +1234,10 @@ span.hooray {
   animation: 2.2s 14 letter-color-explosion; }
 
 span.date {
-  font-size: 0.9em;
   font-family: monospace;
   text-transform: uppercase;
-  padding: 0 0.5rem;
-  display: inline-block;
-  background: #232323;
-  color: #f3f3f3; }
+  padding: 0 0.3rem;
+  display: inline-block; }
   span.date.landing {
     font-family: "Noto Sans", sans-serif;
     padding: 0;

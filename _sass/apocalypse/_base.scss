@@ -8,13 +8,16 @@ html {
 
 body {
     background: $white;
-    padding-top: 50px;
+    padding-top: 63px;
         &#four-oh-six-minus-two {
             background: $jet;
             padding-top: 0;
         }
         &.press, &.landing {
             padding-top: 0;
+        }
+        @include media-query {
+            padding-top: 70px;
         }
 }
 
@@ -81,16 +84,15 @@ body {
 section#welcome {
     position: relative;
     overflow: hidden;
-    padding: 1.5rem 0;
+    padding: 0;
         header {
-            margin-bottom: 1rem;
             margin: 0 auto 1rem;
                 @include media-query {
                     margin: 0;
                 }
         }
         .center {
-            padding: 1.5rem;
+            padding: 0.5rem;
             @include variable-query(700px) {
                 padding: 1.5rem 1.5rem 4rem 1.5rem;
             }
@@ -105,7 +107,7 @@ section#getting-started {
     color: $white;
     .step {
         position: relative;
-        padding: 2rem 0 0;
+        padding: 1.25rem 0 0;
             @include variable-query(880px) {
                 padding: 0;
                 display: flex;
@@ -202,6 +204,11 @@ section#getting-started {
 section#faqs {
     position: relative;
     overflow: hidden;
+}
+
+h2#questions {
+    padding-top: 80px;
+    margin-top: -80px;
 }
 
 .ad-nauseum {

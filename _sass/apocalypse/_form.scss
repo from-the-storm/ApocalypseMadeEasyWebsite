@@ -44,8 +44,8 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
         transition: all 0.25s ease-in-out 0s;
             &:hover {
                 cursor: pointer;
-                -webkit-animation: 2.2s infinite color-explosion;
-                animation: 2.2s infinite color-explosion;
+                -webkit-animation: 2.2s 14 color-explosion;
+                animation: 2.2s 14 color-explosion;
             }
             @include variable-query(1000px) {
                 border-bottom: 2px solid $red;
