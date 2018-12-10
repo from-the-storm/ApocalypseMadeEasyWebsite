@@ -41,7 +41,6 @@ body {
         padding: 0 0.5rem;
             &.aligned {
                 text-align: center;
-                padding-top: 1rem;
             }
             @include variable-query(700px) {
                 padding: 0 1rem;
@@ -249,9 +248,6 @@ section#faqs .ad-nauseum {
         }
         @include media-query {
             padding: 3rem 0 0;
-                .fifty.aligned {
-                    padding-top: 0;
-                }
         }
         #section-funding {
             padding: 2rem;

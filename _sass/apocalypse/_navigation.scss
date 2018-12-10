@@ -46,14 +46,10 @@ a.button {
             background: $black;
             margin: 1.25rem 0 0;
             float: none;
-            display: none;
                 &:hover {
                     color: $white;
                     -webkit-animation: 2.2s 10 color-explosion;
                     animation: 2.2s 10 color-explosion;
-                }
-                @include media-query {
-                    display: inline-block;
                 }
         }
         @include media-query {
