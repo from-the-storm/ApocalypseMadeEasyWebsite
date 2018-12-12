@@ -46,6 +46,7 @@ a.button {
             background: $black;
             margin: 1.25rem 0 0;
             float: none;
+            display: inline-block;
                 &:hover {
                     color: $white;
                     -webkit-animation: 2.2s 10 color-explosion;
