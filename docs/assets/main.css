@@ -394,7 +394,7 @@ template {
 Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 #mc_embed_signup form {
   padding: 10px 0 10px 0;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   font-size: 1.1em; }
 #mc_embed_signup input.email {
   background: none;
@@ -659,6 +659,7 @@ section#faqs .ad-nauseum {
   transform: rotate(7deg); }
 
 .site-footer {
+  overflow: hidden;
   padding: 0;
   color: #f3f3f3;
   background: #000000;
@@ -714,7 +715,8 @@ a {
 img {
   max-width: 100%; }
   img#backfeed {
-    width: 320px; }
+    max-width: 320px;
+    width: 100%; }
   img.mov {
     /* IE 11 Hack */
     flex-shrink: 0; }
@@ -1041,7 +1043,7 @@ a.button {
         display: inline; } }
   a.button#call-to-action {
     background: #232323;
-    margin: 1.25rem 0 0;
+    margin: 1.25rem 0 0.5rem;
     float: none;
     display: inline-block; }
     a.button#call-to-action:hover {

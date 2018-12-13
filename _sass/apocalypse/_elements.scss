@@ -20,7 +20,8 @@ a {
 img {
     max-width: 100%;
         &#backfeed {
-            width: 320px;
+            max-width: 320px;
+            width: 100%;
         }
         &.mov {
             /* IE 11 Hack */
