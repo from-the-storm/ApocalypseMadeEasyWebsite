@@ -1,7 +1,14 @@
-{% if page.url == '/' or page.url == '/win-things' %}
+{% if page.url == '/' %}
 <header class="site-header" role="banner">
   <a onclick="ga('send', 'event', 'Click', 'Header', 'FAQs');" class="button" href="#questions" title="Frequently Asked Questions">FAQs</a>
   <a onclick="ga('send', 'event', 'Click', 'Header', 'Where to Play');" id="where-to-play" class="button" href="#locations" title="Where to Play">Where to Play</a>
+  <a onclick="ga('send', 'event', 'Click', 'Header', 'Start Playing');" id="register" class="button start-playing" rel="noopener noreferrer" target="_blank" href="https://play.apocalypsemadeeasy.com" title="Start Playing">Start Playing</a>
+</header>
+{% endif %}
+
+{% if page.url == '/win-things' or page.url == '/get-involved-in-vancouver' or page.url == '/get-involved-in-kelowna' %}
+<header class="site-header" role="banner">
+  <a onclick="ga('send', 'event', 'Click', 'Header', 'Home');" class="button" href="https://apocalypsemadeeasy.com" title="Apocalypse Made Easy!"><span class="full">Apocalypse Made Easy!</span><span class="short">AME!</span></a>
   <a onclick="ga('send', 'event', 'Click', 'Header', 'Start Playing');" id="register" class="button start-playing" rel="noopener noreferrer" target="_blank" href="https://play.apocalypsemadeeasy.com" title="Start Playing">Start Playing</a>
 </header>
 {% endif %}

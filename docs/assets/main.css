@@ -658,6 +658,9 @@ h2#questions {
 section#faqs .ad-nauseum {
   transform: rotate(7deg); }
 
+section#involved {
+  padding-bottom: 2rem; }
+
 .site-footer {
   overflow: hidden;
   padding: 0;
@@ -889,6 +892,30 @@ img {
       #boris-alert-system a:hover:after {
         border-top-color: #07fb92; }
 
+.grid .card {
+  padding: 1.5rem;
+  border: 1px solid #232323;
+  border-radius: 2px;
+  margin-top: 1rem;
+  width: 100%; }
+  .grid .card h3 {
+    font-size: 1.8em;
+    margin-top: 0; }
+  .grid .card a {
+    color: #232323; }
+  @media screen and (min-width: 40em) {
+    .grid .card {
+      margin-right: 1.5rem;
+      width: 50%; } }
+  .grid .card .button {
+    background: #39fca8;
+    margin: 0.5rem 0 0;
+    color: #232323;
+    float: none;
+    display: inline-block; }
+    .grid .card .button:hover {
+      background: #03e584; }
+
 .landing article {
   min-height: 100vh;
   display: flex;
@@ -1055,6 +1082,15 @@ a.button {
       font-size: 1.25em;
       margin: 0.75rem 0.5rem; } }
 
+span.full {
+  display: none; }
+
+@media screen and (min-width: 440px) {
+  span.short {
+    display: none; }
+
+  span.full {
+    display: block; } }
 .accordion {
   margin-top: 1rem;
   padding-left: 0;
@@ -1147,7 +1183,7 @@ h1 {
         margin: 0.5rem 1.5rem 0 0; } }
 
 h2, h3 {
-  font-size: 2.4em;
+  font-size: 2.2em;
   line-height: 1.3;
   margin-bottom: 0.5rem; }
 
@@ -1155,6 +1191,9 @@ h2#signup {
   padding-top: 140px;
   margin-top: -140px; }
 
+@media screen and (min-width: 40em) {
+  #involved h2 {
+    margin-top: 5rem; } }
 h3 span {
   display: inline-block;
   font-size: 1.5em;

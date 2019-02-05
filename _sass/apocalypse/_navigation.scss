@@ -58,3 +58,16 @@ a.button {
             margin: 0.75rem 0.5rem;
         }
 }
+
+span.full {
+  display: none;
+}
+
+@include variable-query(440px) {
+  span.short {
+    display: none;
+  }
+  span.full {
+    display: block;
+  }
+}

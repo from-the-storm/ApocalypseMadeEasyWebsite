@@ -48,7 +48,7 @@ function initMap() {
     // Info for Kelowna Locations
     var ylwWindowContent = [
         ['<div class="info-content">' + '<h3>FINDING WATER</h3>' + '<p><strong>In the Downtown/Cultural District:</strong> Learn to find and filter water in an urban area.</p>' + '</div>'],
-        ['<div class="info-content">' + '<h3>FOREST FIRE/DROUGHT</h3>' + '<p><strong>At Knox Mountain Park:</strong> Conquer your fears of a scorched and/or dry earth.</p>' + '</div>'],
+        ['<div class="info-content">' + '<h3>WILDFIRES</h3>' + '<p><strong>At Knox Mountain Park:</strong> Conquer your fears of a scorched earth.</p>' + '</div>'],
         ['<div class="info-content">' + '<h3>LIVING OFF THE LAND</h3>' + '<p><strong>At Mission Creek Park:</strong> Search the park for a place to house, feed, and water your group of survivors.</p>' + '</div>'],
         ['<div class="info-content">' + '<h3>GROUP SURVIVAL</h3>' + '<p><strong>At UBC Okanagan:</strong> Discover and overcome your many, many cognitive biases in order to work well with other humans.</p>' + '</div>']
     ];

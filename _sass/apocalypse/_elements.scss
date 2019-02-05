@@ -228,3 +228,36 @@ img {
                 }
         }
 }
+
+.grid {
+  .card {
+    padding: 1.5rem;
+    border: 1px solid $black;
+    border-radius: 2px;
+    margin-top: 1rem;
+    width: 100%;
+      h3 {
+        font-size: 1.8em;
+        margin-top: 0;
+      }
+      a {
+        color: $black;
+      }
+      @include media-query{
+        margin-right: 1.5rem;
+        width: 50%;
+      }
+      .button {
+        background: $lightgreen;
+        margin: 0.5rem 0 0;
+        color: $black;
+        float: none;
+        display: inline-block;
+          &:hover {
+            background: darken($lightgreen, 15%);
+          }
+      }
+  }
+
+}
+
