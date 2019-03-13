@@ -1167,7 +1167,7 @@ h1 {
   align-items: center; }
   @media screen and (min-width: 40em) {
     .about {
-      max-width: 530px; } }
+      max-width: 570px; } }
   .about h2 {
     font-size: 1em;
     font-family: "Noto Sans", sans-serif;
