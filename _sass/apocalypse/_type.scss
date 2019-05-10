@@ -41,7 +41,7 @@ h1 {
     max-width: 100%;
         @include variable-query(1080px){
             line-height: 1.9;
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin: 0.5rem 1.5rem 0 0;
         }
     }
@@ -64,16 +64,11 @@ h2#signup {
   }
 }
 
-h3 span {
-    display: inline-block;
-    font-size: 1.5em;
-    margin-right: 1rem;
-    @include variable-query(540px) {
-        font-size: 2.2em;
-    }
-    @include variable-query(880px) {
-        display: none;
-    }
+h4 {
+    text-transform: uppercase;
+    font-family: $header-font;
+    font-size: 1.1em;
+    margin: 0;
 }
 
 .step-body h3 {
@@ -128,32 +123,6 @@ p {
     font-size: 0.9em;
 }
 
-.number {
-    position: absolute;
-    top: 0;
-    font-size: 9em;
-    display: none;
-    z-index: 1;
-    text-align: center;
-    width: 100%;
-        span {
-            width: 100%;
-        }
-        @include variable-query(880px) {
-            display: flex;
-            height: 100%;
-            align-items: center;
-        }
-        @include variable-query(1080px) {
-            font-size: 16em;
-        }
-}
-
-/* IE 10 and 11 hacks */
-@media all and (-ms-high-contrast:none) {
-    .number { display: none; }
-    *::-ms-backdrop, .number { display: none; }
-}
 
 span.hooray {
     background: $black;

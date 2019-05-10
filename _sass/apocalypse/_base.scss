@@ -91,14 +91,72 @@ section#welcome {
                 }
         }
         .center {
-            padding: 0.5rem;
             @include variable-query(700px) {
                 padding: 1.5rem 1.5rem 4rem 1.5rem;
             }
         }
         @include media-query {
-            padding: 3rem 0;
+            padding: 1rem 0;
         }
+}
+
+section.alert {
+    background: lighten($black, 5%);
+    color: $white;
+    padding: 4em 1rem;
+    position: relative;
+    overflow: hidden;
+    div.wrapper {
+        max-width: 70em;
+        margin: 0 auto;
+        position: relative;
+        @include variable-query(700px) {
+            display: flex;
+            align-items: center;
+                header {
+                    min-width: 300px;;
+                }
+                div {
+                    padding-left: 2rem;
+                }
+        }
+        h3, p {
+            margin: 0;
+        }
+        header {
+            padding: 1rem 2rem;
+        }
+        div {
+            background: $black;
+            border-radius: 5px;
+            padding: 1rem 2rem;
+        }
+    }
+    &#reminders {
+        .wrapper {
+            header, div {
+                flex: 1;
+            }
+            div {
+                background: none;
+                text-align: center;
+                    a {
+                        font-family: $header-font;
+                        text-decoration: none;
+                        display: inline-block;
+                        background: $black;
+                        border: 3px solid $lightgreen;
+                        border-radius: 3px;
+                        padding: 0.5rem 1rem;
+                            &:hover {
+                                -webkit-animation: 2.2s 10 color-explosion;
+                                animation: 2.2s 10 color-explosion;
+                                border-color: $white;
+                            }
+                    }
+            }
+        }
+    }
 }
 
 section#getting-started {
@@ -120,16 +178,17 @@ section#getting-started {
             .step-body {
                 z-index: 2;
                 position: relative;
+                padding-top: 0.5rem;
                 padding-bottom: 1rem;
                 div {
                     margin: 0 auto;
-                    padding: 0 1rem 1rem;
+                    padding: 0 1rem 0;
                     @include variable-query(540px) {
                         padding: 0 2.5rem 1rem;
                     }
                     @include variable-query(880px) {
                         max-width: 600px;
-                        padding: 0 6rem 0 2.5rem;
+                        padding: 0 2.5rem;
                     }
                         h3 {
                             font-size: 2.4em;
@@ -180,19 +239,20 @@ section#getting-started {
                         height: 800px;
                     }
             }
-            &:first-child {
+            &#first {
                 background: lighten($black, 10%);
                 .step-image {
                     background-image: url('img/scenes/pie-trap.jpg');
                 }
             }
-            &:nth-child(2) {
+            &#third {
                 background: lighten($black, 5%);
                 .step-image {
                     background-image: url('img/scenes/trust-fall.jpg');
                 }
             }
-            &:last-child {
+            &#fourth {
+                background: $jet;
                 .step-image {
                     background-image: url('img/scenes/garbage-fire.jpg');
                 }
@@ -212,30 +272,21 @@ h2#questions {
 
 .ad-nauseum {
     position: absolute;
-    top: 10%;
+    top: -50%;
     left: -25%;
     width: 150%;
-    height: 80%;
-    z-index: -1;
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='190px'><text x='0' y='15' fill='black' font-family='Kanit, sans-serif' font-weight='bold' font-size='15'>APOCALYPSE MADE EASY!</text></svg>");
+    height: 200%;
+    z-index: 0;
     transform: rotate(-7deg);
     -webkit-backface-visibility: hidden;    
     backface-visibility: hidden;
-    opacity: 0.025;
-        &:after {
-            content: "";
-            position: absolute;
-            z-index: 1;
-            bottom: 0;
-            left: 0;
-            background-image: linear-gradient(to bottom, rgba(243,243,243,0), rgba(243,243,243, 1) 90%);
-            width: 100%;
-            height: 4em;
+    opacity: 0.07;
+        &#alert {
+            background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='170px'><text x='0' y='15' fill='white' font-family='monospace' font-weight='regular' font-size='15'>BORIS ALERT SYSTEM</text></svg>");
         }
-}
-
-section#faqs .ad-nauseum {
-    transform: rotate(7deg);
+        &#remembers {
+            background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='200px'><text x='0' y='15' fill='white' font-family='monospace' font-weight='regular' font-size='15'>BORIS REMINDER SYSTEM</text></svg>");
+        }
 }
 
 section#involved {
@@ -257,6 +308,7 @@ section#involved {
         #section-funding {
             padding: 2rem;
             margin: 0 auto;
+            max-width: 70em;
             color: darken($white, 30%);
             #logos {
                 text-align: center;
@@ -266,13 +318,12 @@ section#involved {
                     }
             }
             @include media-query {
-                padding: 4.5rem 2rem 2rem;
+                padding: 4.5rem 1rem 2rem;
             }
             @include variable-query(1160px) {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                max-width: 1260px;
                 text-align: left;
                     p {
                         margin-right: 2rem;

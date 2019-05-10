@@ -51,39 +51,22 @@ img {
 }
 
 #phone {
-    position: relative;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     max-width: 360px;
         @include variable-query(700px) {
             max-width: 280px;
         }
-    .screen-background {
-        position: absolute;
-        top: 9.5%;
-        left: 8%;
-        width: 83.5%;
-        height: 77.5%;
-        &.slick-loading {
-            background: #ffffff;
-        }
-    }
-    #phone-skin {
-        position: relative;
-        width: 100%;
-    }
 }
 
 #map-container {
     position: relative;
     border-top: 1px dashed lighten($black, 10%);
-    height: 400px;
+    height: 100%;
         @include media-query {
             border-top: 0;
         }
     #map {
         width: 100%;
-        height: 400px;
+        height: 100%;
         color: $black;
         position: relative;
         z-index: 1;
@@ -125,10 +108,14 @@ img {
                     }
             }
             .city {
-                font-size: 1.3em;
+                font-size: 0.9em;
+                @include media-query {
+                    font-size: 1.3em;
+                    width: 155px;
+                }
                 margin: 0 auto;
                 position: relative;
-                width: 155px;
+                width: 125px;
                 height: 40px;
                 text-align: center;
                 background: $white;

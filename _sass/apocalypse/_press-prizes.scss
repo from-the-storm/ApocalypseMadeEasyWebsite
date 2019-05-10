@@ -33,9 +33,9 @@ ul#stats {
             }
     }
     figure {
-        margin: 2rem 0;
+        margin: 0.5rem 0 2rem !important;
             a {
-                color: $black;
+                color: $black !important;
                 text-decoration: none;
             }
             img {
@@ -46,6 +46,7 @@ ul#stats {
             }
             figcaption {
                 margin-top: 0.5rem;
+                padding: 0 1rem;
                 img {
                     margin-left: 0.5rem;
                     vertical-align: bottom;
@@ -61,7 +62,7 @@ ul#stats {
                 margin-top: 1rem;
             }
     }
-    a {
+    .page-content a {
         color: $red;
             &:hover {
                 color: darken($red, 10%);
@@ -81,10 +82,17 @@ ul#stats {
 .win-things {
     #stats {
         flex: 1;
+        font-size: 1.1em;
         margin-right: 1.5rem;
     }
     #prize-image {
         flex: 2;
+            figure img {
+                filter: brightness(1) !important;
+            }
+            figcaption {
+                padding: 0;
+            }
     }
     #register {
         color: $white;

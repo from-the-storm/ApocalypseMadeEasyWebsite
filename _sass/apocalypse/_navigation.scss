@@ -3,20 +3,28 @@
     top: 0;
     left: 0;
     width: 100%;
+    padding: 0 0.25rem;
     z-index: 5;
     background: $black;
-    padding: 0 0.5rem;
     border-bottom: 2px solid lighten($black, 25%);
+        .hide {
+            display: none;
+        }
         @include media-query {
             padding: 0 3rem;
+        }
+        @include variable-query(740px) {
+            .hide {
+                display: inline;
+            }
         }
 }
 
 a.button {
     font-family: $header-font;
     text-transform: uppercase;
-    font-size: 1em;
-    padding: 0.35rem 1rem;
+    font-size: 0.9em;
+    padding: 0.25rem 0.5rem;
     margin: 0.75rem 0.25rem;
     text-align: center;
     text-decoration: none;
@@ -25,8 +33,8 @@ a.button {
         &:hover {
             color: darken($white, 20%);
         }
-        &#register {
-            background: $white;
+        &#startPlaying {
+            background: $lightgreen;
             float: right;
             color: $black;
             transition: color 0s;
@@ -43,19 +51,30 @@ a.button {
             }
         }
         &#call-to-action {
-            background: $black;
             margin: 1.25rem 0 0.5rem;
             float: none;
             display: inline-block;
+            color: $black;
+            border: 1px solid $black;
                 &:hover {
                     color: $white;
                     -webkit-animation: 2.2s 10 color-explosion;
                     animation: 2.2s 10 color-explosion;
+                    border-color: $white;
                 }
         }
         @include media-query {
             font-size: 1.25em;
             margin: 0.75rem 0.5rem;
+            padding: 0.5rem 1rem;
+        }
+}
+
+a.inline {
+    text-transform: uppercase;
+    font-family: $header-font;
+        &:hover {
+            color: $lightgreen;
         }
 }
 

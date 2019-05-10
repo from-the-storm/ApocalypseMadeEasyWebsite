@@ -1,23 +1,7 @@
 $(document).on('ready', function() {
 
-    // Initialize slider
-    $('.screen-background').slick({
-        autoplay: true,
-        autoplaySpeed: 6000,
-        speed: 700,
-    });
-
     // Initialize Foundation
     $(document).foundation();
-
-    // let yesteryesterday = new Date();
-    // yesteryesterday.setDate(yesteryesterday.getDate() - 2);
-    // const day = yesteryesterday.getDate();
-    // const locale = 'en-us';
-    // const month = yesteryesterday.toLocaleString(locale, { month: "long" });
-    // const year = yesteryesterday.getFullYear();
-    
-    // $('.date').text(' ' + month + ' ' + day + ', ' + year + ', ');
 
 });
 

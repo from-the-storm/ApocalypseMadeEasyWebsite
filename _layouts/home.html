@@ -4,7 +4,6 @@ layout: default
 
 <article>
   <section id="welcome">
-  <div class="ad-nauseum"></div>
     <div class="section-body">
       <div class="sixty">
           <header>
@@ -13,65 +12,99 @@ layout: default
                 <img height="80" width="80" class="mov mb" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
             <div class="about">
-                <h2>is an outdoor, team-based apocalypse survival training game that runs in your phone's browser. The beta's now open in Vancouver and Kelowna.</h2>
+                <h2>A free, team survival training game that runs in your phone's web browser. Find food and water, overcome natural disasters, and keep your team from imploding. Now available in Vancouver and Kelowna.</h2>
                 <img height="80" width="80" class="mov dt" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
-            <div><a onclick="ga('send', 'event', 'Click', 'Call to Action', 'Start Playing');" id="call-to-action" class="button start-playing" rel="noopener noreferrer" target="_blank" href="https://play.apocalypsemadeeasy.com" title="Start Playing">Start Playing</a></div>
+            <div><a onclick="ga('send', 'event', 'Click', 'Call to Action', 'How to Play');" id="call-to-action" class="button start-playing" rel="noopener noreferrer" target="_blank" href="#getting-started" title="How to Play">How to Play</a></div>
           </header>
       </div>
       <div class="center">
-          {% include slider.html %}
+        <img id="phone" alt="Apocalypse Made Easy! Screenshot" src="assets/img/presskit/choose-your-scenario.png" />
       </div>
     </div>
   </section>
+  <section class="alert" id="news">
+      <div class="ad-nauseum" id="alert"></div>
+      <div class="wrapper">
+        <header>
+            <h4>Posted May 11, 2019</h4>
+            <h3>Win Things!</h3>
+        </header>
+        <div><p>Finish any scenario between <strong>now and June 4</strong> and your team will automatically be entered to win survival prize packs! <a class="inline" href="/win-survival-prize-packs">More Info</a></p></div>
+      </div>
+  </section>
   <section id="getting-started">
-    <div class="step">
+    <div class="step" id="first">
       <div class="step-body">
           <div>
-            <h3><span>1</span>Gather your friends!</h3>
-            <p>The number one most rhyming rule for apocalypse survival is <em>don't go solo</em>. Don't have any friends? How about tolerable coworkers? Or random people from the internet? They’ll do.</p>
+              <h4>How to Play</h4>
+            <h3><span>#1</span> Gather friends!</h3>
+            <p>The number one most rhyming rule for apocalypse survival is <em>don't go solo</em>. So register a team. Gather <strong>1 to 4</strong> other people. Then invite them to join you by sharing your unique team code.</p>
           </div>
       </div>
       <div class="step-image"></div>
-      <div class="number"><span>1</span></div>
     </div>
-    <div class="step">
+    <div class="step" id="second">
         <div class="step-body">
             <div>
-                <h3><span>2</span>Choose a scenario!</h3>
-                <p>Create a team and pick from four different apocalyptian scenarios <a href="#locations" title="Apocalypse Made Easy! scenario locations">running in Vancouver and Kelowna</a>. Each one focuses on a separate skill. Then head to the scenario start point to get... started. How you get there is up to you.</p>
+                <h4>How to Play</h4>
+                <h3><span>#2</span> Choose scenario!</h3>
+                <p>Pick from four apocalyptic scenarios in Vancouver or Kelowna. Bring yourselves and your phones to its start point to get&hellip; started.</p>
+            </div>
+        </div>
+        <div class="step-image">
+            <section id="map-container">
+                <div id="map"></div>
+                <div id="cities">
+                    <span id="locations">Scenario locations</span>
+                    <div class="city">
+                        <input type="radio" value="vancouver" id="vancouver" name="city" checked />
+                        <label for="vancouver">Vancouver</label>
+                    </div>
+                    <div class="city">
+                        <input type="radio" value="kelowna" id="kelowna" name="city" />
+                        <label for="kelowna">Kelowna</label>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="step" id="third">
+        <div class="step-body">
+            <div>
+                <h4>How to Play</h4>
+                <h3><span>#3</span> Start surviving!</h3>
+                <p>Once you arrive and start the scenario, a somewhat-helpful AI named BORIS will send instructions directly to your phones.</p>
             </div>
         </div>
         <div class="step-image"></div>
-        <div class="number"><span>2</span></div>
     </div>
-    <div class="step">
+    <div class="step" id="fourth">
         <div class="step-body">
             <div>
-                <h3><span>3</span>Start surviving!</h3>
-                <p>Work with your team to progress through the challenges and survive the scenario. The swiftest, most survivingest, and highest-scoring teams will win useful survival kits filled with stuff we didn't have room for in the garage.</p>
+                <h4>How to Play</h4>
+                <h3><span>#4</span> Win!</h3>
+                <p>Or lose. Both are equally likely. Just know that the stakes are high: top teams will win highly-fashionable <a href="/win-survival-prize-packs">survival prize packs</a>.</p>
             </div>
         </div>
         <div class="step-image"></div>
-        <div class="number"><span>3</span></div>
     </div>
   </section>
-  <section id="map-container">
-    <div id="map"></div>
-    <div id="cities">
-        <span id="locations">Scenario locations</span>
-        <div class="city">
-            <input type="radio" value="vancouver" id="vancouver" name="city" checked />
-            <label for="vancouver">Vancouver</label>
+  <section class="alert" id="reminders">
+        <div class="ad-nauseum" id="remembers"></div>
+        <div class="wrapper">
+            <header>
+                <h3>Remember!</h3>
+                <p>- Each team member needs a phone.</p>
+                <p>- Make sure your batteries are charged.</p>
+                <p>- The game will use around 5 MB of mobile data.</p>
+            </header>
+            <div>
+                <h3><a href="https://play.apocalypsemadeeasy.com" title="Sign up and Start Playing">Sign Up &amp;<br>Start Playing</a></h3>
+            </div>
         </div>
-        <div class="city">
-            <input type="radio" value="kelowna" id="kelowna" name="city" />
-            <label for="kelowna">Kelowna</label>
-        </div>
-    </div>
   </section>
   <section id="faqs">
-      <div class="ad-nauseum"></div>
         <div class="wrap">
         <h2 id="questions">FAQS</h2>
         <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
@@ -82,10 +115,21 @@ layout: default
                 </div>
             </li>
             <li class="accordion-item" data-accordion-item>
-                <a href="#" class="accordion-title">Where can I do it? And what's it cost?</a>
+                <a href="#" class="accordion-title">Where can I do it?</a>
                 <div class="accordion-content" data-tab-content>
-                    <p>It's available in Vancouver and Kelowna in the locations marked on <a style="color: #f66f5c; text-decoration: underline;" href="#locations">the map</a> above me here. The Vancouver and Kelowna betas are <a style="color: #f66f5c; text-decoration: underline;" rel="noopener noreferrer" class="start-playing" target="_blank" href="https://play.apocalypsemadeeasy.com">open now</a>.</p><p>If you live anywhere other than those two places, you will sadly perish during the coming apocalypse due to your lack of preparedness.</p>
-                    <p>And the price is <span class="hooray">free!</span> But the true cost is if you <em>don’t</em> participate and are ill-prepared for the end. That cost is astronomical.</p>
+                    <p>It's available in Vancouver and Kelowna in the locations marked on <a style="color: #f66f5c; text-decoration: underline;" href="#locations">the map</a> above me here. In Vancouver, there are scenarios at Stanley Park, the False Creek Seawall, UBC, and Pacific Spirit Park. In Kelowna, there are scenarios downtown, at Knox Mountain Park, Mission Creek Park, and UBC Okanagan.</p><p>If you live anywhere other than those two cities, you will sadly perish during the coming apocalypse due to your lack of preparedness.</p>
+                </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">What's it cost?</a>
+                <div class="accordion-content" data-tab-content>
+                    <p>It's <span class="hooray">free!</span> But the true cost is if you <em>don’t</em> participate and are ill-prepared for the end. That cost is astronomical.</p>
+                </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">Do I need to download an app?</a>
+                <div class="accordion-content" data-tab-content>
+                    <p>No app download is needed! It runs in your phone's internet browser, such as Safari or Chrome. But it will use around 5 MB of mobile data, which is similar to streaming one song.</p>
                 </div>
             </li>
             <li class="accordion-item" data-accordion-item>
@@ -97,9 +141,10 @@ layout: default
                 </div>
             </li>
             <li class="accordion-item" data-accordion-item>
-                <a href="#" class="accordion-title">What are some of the many perils of trying to survive the apocalypse alone?</a>
+                <a href="#" class="accordion-title">What are the many perils of trying to survive the apocalypse alone?</a>
                 <div class="accordion-content" data-tab-content>
-                     <p><code>The perils are too many to list. The perils are too many to list. The perils are too many to list. The perils are too many to list. The perils are too many to list. The perils are too many to list. The perils are&hellip;</code></p>
+                    <p><code>The perils are too many to list. The perils are too many to list. The perils are too many to list. The perils are too many to list. The perils are too many to list. The perils are too many to list. The perils are&hellip;</code>
+                    </p>
                 </div>
             </li>
         </ul>
