@@ -24,7 +24,7 @@ function initMap() {
     if (selected == 'vancouver') {
         markers = [
             ['UBC Main Mall', 49.266882, -123.254520, iconPath + 'dynamics.svg'],
-            ['UBC Pacific Spirit', 49.271418, -123.254102, iconPath + 'water.svg'],
+            ['UBC Pacific Spirit', 49.274870, -123.252972, iconPath + 'water.svg'],
             ['SE False Creek', 49.273271, -123.102418, iconPath + 'earthquakes.svg'],
             ['Stanley Park', 49.298072, -123.135838, iconPath + 'land.svg']
         ];
