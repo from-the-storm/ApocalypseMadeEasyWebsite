@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Apocalypse Made Easy!</title>
+  <title>Apocalypse Made Easy! Vancouver</title>
   <meta name="description" content="An outdoor, team-based apocalypse training course that runs in your phone&#39;s browser. Public beta now open in Vancouver and Kelowna.">
   <meta name="msapplication-TileColor" content="#2c2c2c">
   <meta name="msapplication-config" content="../assets/img/icons/fav/browserconfig.xml">
@@ -18,7 +18,7 @@
   <link rel="shortcut icon" href="../assets/img/icons/fav/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Kanit:700|Noto+Sans" rel="stylesheet">
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/vancouver">
   <link rel="alternate" type="application/rss+xml" title="Apocalypse Made Easy!" href="/feed.xml">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -27,7 +27,7 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGyVCtlNrsdN5IK3gbNYqjGy2g0hUkTOs&callback=initMap"></script>
   
   
-  <script src="../assets/js/map-init.js"></script>
+  <script src="../assets/js/map-init-vancouver.js"></script>
   
 
   <!-- Google Analytics -->
@@ -59,13 +59,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     
 <header class="site-header landing" role="banner">
-    <a onclick="ga('send', 'event', 'Click', 'Header-', 'How to Play');" class="button"
+    <a onclick="ga('send', 'event', 'Click', 'Header-vancouver', 'How to Play');" class="button"
         href="#getting-started" title="How to Play">How to Play</a>
-    <a onclick="ga('send', 'event', 'Click', 'Header-', 'FAQs');" class="button hide"
+    <a onclick="ga('send', 'event', 'Click', 'Header-vancouver', 'FAQs');" class="button hide"
         href="#questions" title="Frequently Asked Questions">FAQs</a>
-    <a onclick="ga('send', 'event', 'Click', 'Header-', 'Press Kit');" class="button"
+    <a onclick="ga('send', 'event', 'Click', 'Header-vancouver', 'Press Kit');" class="button"
         rel="noopener noreferrer" href="/press" title="Press Kit">Press<span class="hide"> Kit</span></a>
-    <a onclick="ga('send', 'event', 'Click', 'Header-', 'Start Playing');" id="startPlaying" class="button start-playing"
+    <a onclick="ga('send', 'event', 'Click', 'Header-vancouver', 'Start Playing');" id="startPlaying" class="button start-playing"
         rel="noopener noreferrer" target="_blank" href="https://play.apocalypsemadeeasy.com" title="Start Playing">Start
         Playing</a>
 </header>
@@ -83,7 +83,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img height="80" width="80" class="mov mb" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
             <div class="about">
-                <h2>A free, team survival training game that runs in your phone's web browser. Find food and water, overcome natural disasters, and keep your team from imploding. Now available in Vancouver and Kelowna.</h2>
+                <h2>A free, team survival training game that runs in your phone's web browser. Find food and water, overcome natural disasters, and keep your team from imploding. Now available in Vancouver.</h2>
                 <img height="80" width="80" class="mov dt" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
             <div><a onclick="ga('send', 'event', 'Click', 'Call to Action', 'How to Play');" id="call-to-action" class="button start-playing" href="#getting-started" title="How to Play">How to Play</a></div>
@@ -123,23 +123,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div>
                 <h4>How to Play</h4>
                 <h3><span>#2</span> Choose scenario!</h3>
-                <p>Pick from four apocalyptic scenarios in Vancouver or Kelowna. Bring yourselves and your phones to its start point to get&hellip; started.</p>
+                <p>Pick from four apocalyptic scenarios in Vancouver. Bring yourselves and your phones to its start point to get&hellip; started.</p>
             </div>
         </div>
         <div class="step-image">
             <section id="map-container">
+                <span id="locations"></span>
                 <div id="map"></div>
-                <div id="cities">
-                    <span id="locations">Scenario locations</span>
-                    <div class="city">
-                        <input type="radio" value="vancouver" id="vancouver" name="city" checked />
-                        <label for="vancouver">Vancouver</label>
-                    </div>
-                    <div class="city">
-                        <input type="radio" value="kelowna" id="kelowna" name="city" />
-                        <label for="kelowna">Kelowna</label>
-                    </div>
-                </div>
             </section>
         </div>
     </div>
@@ -191,7 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li class="accordion-item" data-accordion-item>
                 <a href="#" class="accordion-title">Where can I do it?</a>
                 <div class="accordion-content" data-tab-content>
-                    <p>It's available in Vancouver and Kelowna in the locations marked on <a style="color: #f66f5c; text-decoration: underline;" href="#locations">the map</a> above me here. In Vancouver, there are scenarios at Stanley Park, the False Creek Seawall, UBC, and Pacific Spirit Park. In Kelowna, there are scenarios downtown, at Knox Mountain Park, Mission Creek Park, and UBC Okanagan.</p><p>If you live anywhere other than those two cities, you will sadly perish during the coming apocalypse due to your lack of preparedness.</p>
+                    <p>It's available in Vancouver in the locations marked on <a style="color: #f66f5c; text-decoration: underline;" href="#locations">the map</a> above me here. There are scenarios at Stanley Park, the False Creek Seawall, UBC, and Pacific Spirit Park.</p>
                 </div>
             </li>
             <li class="accordion-item" data-accordion-item>

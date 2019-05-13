@@ -1,12 +1,12 @@
-{% if page.url == '/' %}
+{% if page.url == '/' or page.url == '/vancouver' or page.url == '/kelowna' or page.url == '/vancouver-families' or page.url == '/kelowna-families' %}
 <header class="site-header landing" role="banner">
-    <a onclick="ga('send', 'event', 'Click', 'Header', 'How to Play');" class="button"
+    <a onclick="ga('send', 'event', 'Click', 'Header-{{ page.url | slugify }}', 'How to Play');" class="button"
         href="#getting-started" title="How to Play">How to Play</a>
-    <a onclick="ga('send', 'event', 'Click', 'Header', 'FAQs');" class="button hide"
+    <a onclick="ga('send', 'event', 'Click', 'Header-{{ page.url | slugify }}', 'FAQs');" class="button hide"
         href="#questions" title="Frequently Asked Questions">FAQs</a>
-    <a onclick="ga('send', 'event', 'Click', 'Header', 'Press Kit');" class="button"
+    <a onclick="ga('send', 'event', 'Click', 'Header-{{ page.url | slugify }}', 'Press Kit');" class="button"
         rel="noopener noreferrer" href="/press" title="Press Kit">Press<span class="hide"> Kit</span></a>
-    <a onclick="ga('send', 'event', 'Click', 'Header', 'Start Playing');" id="startPlaying" class="button start-playing"
+    <a onclick="ga('send', 'event', 'Click', 'Header-{{ page.url | slugify }}', 'Start Playing');" id="startPlaying" class="button start-playing"
         rel="noopener noreferrer" target="_blank" href="https://play.apocalypsemadeeasy.com" title="Start Playing">Start
         Playing</a>
 </header>

@@ -12,7 +12,7 @@ layout: default
                 <img height="80" width="80" class="mov mb" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
             <div class="about">
-                <h2>A free, team survival training game that runs in your phone's web browser. Find food and water, overcome natural disasters, and keep your team from imploding. Now available in Vancouver and Kelowna.</h2>
+                <h2>A free, team survival training game that runs in your phone's web browser. Find food and water, overcome natural disasters, and learn valuable survival lessons&mdash;all while racing around Kelowna!</h2>
                 <img height="80" width="80" class="mov dt" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
             <div><a onclick="ga('send', 'event', 'Click', 'Call to Action', 'How to Play');" id="call-to-action" class="button start-playing" href="#getting-started" title="How to Play">How to Play</a></div>
@@ -23,13 +23,13 @@ layout: default
       </div>
     </div>
   </section>
-  {% include alert.html %}
+  {% include alert-families.html %}
   <section id="getting-started">
     <div class="step" id="first">
       <div class="step-body">
           <div>
-              <h4>How to Play</h4>
-            <h3><span>#1</span> Gather friends!</h3>
+            <h4>How to Play</h4>
+            <h3><span>#1</span> Assemble your team!</h3>
             <p>The number one most rhyming rule for apocalypse survival is <em>don't go solo</em>. So register a team. Gather <strong>1 to 4</strong> other people. Then invite them to join you by sharing your unique team code.</p>
           </div>
       </div>
@@ -40,23 +40,13 @@ layout: default
             <div>
                 <h4>How to Play</h4>
                 <h3><span>#2</span> Choose scenario!</h3>
-                <p>Pick from four apocalyptic scenarios in Vancouver or Kelowna. Bring yourselves and your phones to its start point to get&hellip; started.</p>
+                <p>Pick from four apocalyptic scenarios in Kelowna. Bring yourselves and your phones to its start point to get&hellip; started. (We recommend families begin with the LIVING OFF THE LAND scenario at Mission Creek Park!)</p>
             </div>
         </div>
         <div class="step-image">
             <section id="map-container">
                 <div id="map"></div>
-                <div id="cities">
-                    <span id="locations">Scenario locations</span>
-                    <div class="city">
-                        <input type="radio" value="vancouver" id="vancouver" name="city" checked />
-                        <label for="vancouver">Vancouver</label>
-                    </div>
-                    <div class="city">
-                        <input type="radio" value="kelowna" id="kelowna" name="city" />
-                        <label for="kelowna">Kelowna</label>
-                    </div>
-                </div>
+                <span id="locations"></span>
             </section>
         </div>
     </div>
@@ -64,8 +54,8 @@ layout: default
         <div class="step-body">
             <div>
                 <h4>How to Play</h4>
-                <h3><span>#3</span> Start surviving!</h3>
-                <p>Once you arrive and start the scenario, a somewhat-helpful AI named BORIS will send instructions directly to your phones.</p>
+                <h3><span>#3</span> Start playing!</h3>
+                <p>Once you arrive, go to this website (<a href="https://play.apocalypsemadeeasy.com">play.apocalypsemadeeasy.com</a>) to start the scenario. A somewhat-helpful AI named BORIS will send instructions directly to your phones.</p>
             </div>
         </div>
         <div class="step-image"></div>
@@ -86,7 +76,7 @@ layout: default
         <div class="wrapper">
             <header>
                 <h3>Remember!</h3>
-                <p>- Each team member needs a phone.</p>
+                <p>- Each team member needs a phone (of course&mdash;there’s nothing to say that phones can’t be shared!)</p>
                 <p>- Make sure your batteries are charged.</p>
                 <p>- The game will use around 5 MB of mobile data.</p>
             </header>
@@ -108,7 +98,7 @@ layout: default
             <li class="accordion-item" data-accordion-item>
                 <a href="#" class="accordion-title">Where can I do it?</a>
                 <div class="accordion-content" data-tab-content>
-                    <p>It's available in Vancouver and Kelowna in the locations marked on <a style="color: #f66f5c; text-decoration: underline;" href="#locations">the map</a> above me here. In Vancouver, there are scenarios at Stanley Park, the False Creek Seawall, UBC, and Pacific Spirit Park. In Kelowna, there are scenarios downtown, at Knox Mountain Park, Mission Creek Park, and UBC Okanagan.</p><p>If you live anywhere other than those two cities, you will sadly perish during the coming apocalypse due to your lack of preparedness.</p>
+                    <p>It's available in Kelowna in the locations marked on <a style="color: #f66f5c; text-decoration: underline;" href="#locations">the map</a> above me here. There are scenarios downtown, at Knox Mountain Park, Mission Creek Park, and UBC Okanagan.</p>
                 </div>
             </li>
             <li class="accordion-item" data-accordion-item>
