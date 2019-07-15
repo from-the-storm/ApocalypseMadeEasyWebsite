@@ -1071,6 +1071,11 @@ span.full {
         @media screen and (min-width: 40em) {
           .accordion li.accordion-item .accordion-content p {
             font-size: 1.1em; } }
+  .accordion ol li {
+    margin-bottom: 1.1rem; }
+  .accordion ol li ul {
+    margin-top: 0.7rem;
+    margin-bottom: 2rem; }
 
 body {
   font-family: "Noto Sans", sans-serif;
