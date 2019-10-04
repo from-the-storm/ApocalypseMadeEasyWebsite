@@ -21,7 +21,7 @@
 }
 
 a.button {
-    font-family: $header-font;
+    font-family: "Kanit", sans-serif;
     text-transform: uppercase;
     font-size: 0.9em;
     padding: 0.25rem 0.5rem;
@@ -30,16 +30,11 @@ a.button {
     text-decoration: none;
     border-radius: 2px;
     float: left;
-        &:hover {
-            color: darken($white, 20%);
-        }
         &#startPlaying {
-            background: $lightgreen;
+            background: #fc7239;
             float: right;
-            color: $black;
             transition: color 0s;
             &:hover {
-                color: $white;
                 -webkit-animation: 2.2s 10 color-explosion;
                 animation: 2.2s 10 color-explosion;
             }
@@ -56,11 +51,11 @@ a.button {
             display: inline-block;
             color: $black;
             border: 1px solid $black;
+            background: #fc7239;
+            color: $white;
                 &:hover {
-                    color: $white;
                     -webkit-animation: 2.2s 10 color-explosion;
                     animation: 2.2s 10 color-explosion;
-                    border-color: $white;
                 }
         }
         @include media-query {
@@ -72,7 +67,7 @@ a.button {
 
 a.inline {
     text-transform: uppercase;
-    font-family: $header-font;
+    font-family: "Kanit", sans-serif;
         &:hover {
             color: $lightgreen;
         }

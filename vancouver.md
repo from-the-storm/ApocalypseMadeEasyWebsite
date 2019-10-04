@@ -4,4 +4,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home-vancouver
 title: Apocalypse Made Easy! Vancouver
+published: false
 ---

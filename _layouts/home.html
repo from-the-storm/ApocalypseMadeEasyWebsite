@@ -8,11 +8,11 @@ layout: default
       <div class="sixty">
           <header>
             <div class="title">
-                <h1>Apocalypse<br>Made Easy!</h1>
+                <h1>Apocalypse<br><span id="me">Made <span id="easy"><span id="easy-easy">Easy!</span><span id="spoopy">spoopy!</span></span></span></h1>
                 <img height="80" width="80" class="mov mb" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
             <div class="about">
-                <h2>A free, team survival training game that runs in your phone's web browser. Find food and water, overcome natural disasters, and keep your team from imploding. Now available in Vancouver and Kelowna.</h2>
+                <h2>A free, outdoor, team survival training game that runs in your phone's web browser. Play now in Vancouver and Kelowna.</h2>
                 <img height="80" width="80" class="mov dt" src="assets/img/movember-bg.png" alt="Funded by the Movember Foundation" />
             </div>
             <div><a onclick="ga('send', 'event', 'Click', 'Call to Action', 'How to Play');" id="call-to-action" class="button start-playing" href="#getting-started" title="How to Play">How to Play</a></div>
@@ -23,13 +23,18 @@ layout: default
       </div>
     </div>
   </section>
+  {% include alert.html %}
   <section id="getting-started">
     <div class="step" id="first">
       <div class="step-body">
           <div>
               <h4>How to Play</h4>
             <h3><span>#1</span> Gather friends!</h3>
-            <p>The number one most rhyming rule for apocalypse survival is <em>don't go solo</em>. So register a team. Gather <strong>1 to 4</strong> other people. Then invite them to join you by sharing your unique team code.</p>
+            <p>You'll need a team of 2 to 5. Once you create a team, you'll get a unique code your teammates can use to join you.</p>
+            <h3><span>#2</span> Choose scenario!</h3>
+            <p>Pick from four different scenarios. Then bring yourselves and your phones to its starting point.</p>
+            <h3><span>#3</span> Start surviving!</h3>
+            <p>Once you start, an AI named BORIS will send clues and instructions to your phones.</p>
           </div>
       </div>
       <div class="step-image"></div>
@@ -37,9 +42,8 @@ layout: default
     <div class="step" id="second">
         <div class="step-body">
             <div>
-                <h4>How to Play</h4>
-                <h3><span>#2</span> Choose scenario!</h3>
-                <p>Pick from four apocalyptic scenarios in Vancouver or Kelowna. Bring yourselves and your phones to its start point to get&hellip; started.</p>
+                <h3>Scenario Map!</h3>
+                <p>Choose from these four apocalyptic scenarios in Vancouver or Kelowna. For an overview of the scenarios, visit our handy <a href="#questions">FAQ section</a>.</p>
             </div>
         </div>
         <div class="step-image">
@@ -59,34 +63,14 @@ layout: default
             </section>
         </div>
     </div>
-    <div class="step" id="third">
-        <div class="step-body">
-            <div>
-                <h4>How to Play</h4>
-                <h3><span>#3</span> Start surviving!</h3>
-                <p>Once you arrive and start the scenario, a somewhat-helpful AI named BORIS will send instructions directly to your phones.</p>
-            </div>
-        </div>
-        <div class="step-image"></div>
-    </div>
-    <div class="step" id="fourth">
-        <div class="step-body">
-            <div>
-                <h4>How to Play</h4>
-                <h3><span>#4</span> Win!</h3>
-                <p>Or lose. Both are equally likely.</p>
-            </div>
-        </div>
-        <div class="step-image"></div>
-    </div>
   </section>
   <section class="alert" id="reminders">
         <div class="ad-nauseum" id="remembers"></div>
         <div class="wrapper">
             <header>
                 <h3>Remember!</h3>
-                <p>- Apocalypse Made Easy! is appropriate for all ages, but you will need a phone to receive instructions (of course - there’s nothing to say that phones can’t be shared).</p>
-                <p>- Make sure your batteries are charged.</p>
+                <p>- Each team member needs a smartphone.</p>
+                <p>- Make sure your phone batteries are charged.</p>
                 <p>- The game will use around 5 MB of mobile data.</p>
             </header>
             <div>

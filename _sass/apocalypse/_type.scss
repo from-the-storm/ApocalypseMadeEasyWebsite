@@ -5,24 +5,70 @@ body {
     color: $black
 }
 
-h1, h2, h3, .city, .number, #mc_embed_signup .button {
+h1, h2, h3, .number {
     font-family: $header-font;
+    text-transform: uppercase;
+}
+
+.city, #mc_embed_signup .button {
+    font-family: "Kanit", sans-serif;
     text-transform: uppercase;
 }
 
 h1 {
     margin: 0;
-    line-height: 1;
-    font-size: 1.9em;
+    line-height: 0.8;
+    font-size: 2.5em;
+    font-family: 'Kanit', sans-serif;
     @include variable-query(470px) {
         font-size: 2.8em;
     }
     @include variable-query(700px) {
-        font-size: 3.4em;
+        font-size: 60px;
+        #spoopy {
+            font-size: 0.45em;
+            position: absolute;
+            right: 0;
+            left: 0;
+            text-align: center;
+            top: -4px;
+        }
+        #easy {
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 11px;
+                width: 104%;
+                top: 47%;
+                left: -2%;
+                background: $white;
+            }
+        }
     }
     @include variable-query(1080px) {
-        font-size: 5.5em;
+        font-size: 90px;
     }
+    #me {
+        font-size: 0.6em;
+        position: relative;
+            #easy {
+                position: relative;
+                    #easy-easy {
+                        display: none;
+                        @include variable-query (700px) {
+                            display: inline;
+                        }
+                    }
+            }
+            #spoopy {
+                font-family: "Creepster", cursive;
+            }
+    }
+}
+
+.spoop {
+    font-family: "Creepster", cursive;
 }
 
 .about {
@@ -66,7 +112,7 @@ h2#signup {
 
 h4 {
     text-transform: uppercase;
-    font-family: $header-font;
+    font-family: "Kanit", sans-serif;
     font-size: 1.1em;
     margin: 0;
 }
@@ -88,7 +134,11 @@ h4 {
 
 p {
     font-size: 1.1em;
-    line-height: 1.8;
+    line-height: 1.7;
+}
+
+.step-body p {
+    margin-top: 0;
 }
 
 .fourth-wall {
