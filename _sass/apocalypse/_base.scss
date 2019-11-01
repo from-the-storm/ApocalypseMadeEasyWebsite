@@ -82,11 +82,6 @@ section#welcome {
     position: relative;
     overflow: hidden;
     padding: 0;
-    background: $black;
-    color: $white;
-    background-image: url('img/webs.png');
-    background-size: cover;
-    background-repeat: no-repeat;
         header {
             margin: 0 auto 1rem;
                 @include media-query {
@@ -255,7 +250,7 @@ section#getting-started {
             &#first {
                 background: lighten($black, 10%);
                 .step-image {
-                    background-image: url('img/scenes/garbage-fire-h.jpg');
+                    background-image: url('img/scenes/garbage-fire.jpg');
                 }
             }
             &#third {

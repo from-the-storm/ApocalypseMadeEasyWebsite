@@ -31,7 +31,7 @@ a.button {
     border-radius: 2px;
     float: left;
         &#startPlaying {
-            background: #fc7239;
+            background: $lightgreen;
             float: right;
             transition: color 0s;
             &:hover {
@@ -50,8 +50,8 @@ a.button {
             float: none;
             display: inline-block;
             color: $black;
-            border: 1px solid $black;
-            background: #fc7239;
+            border: 1px solid $white;
+            background: $black;
             color: $white;
                 &:hover {
                     -webkit-animation: 2.2s 10 color-explosion;
