@@ -498,7 +498,9 @@ body {
       .section-body .fifty {
         padding: 0 1rem; } }
   .section-body .sixty {
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    z-index: 1;
+    position: relative; }
     @media screen and (min-width: 700px) {
       .section-body .sixty {
         padding: 1rem;
@@ -506,6 +508,8 @@ body {
         transform: rotate(-7deg); } }
   .section-body .center {
     margin: 0 -0.5em;
+    z-index: 1;
+    position: relative;
     padding: 0 0 1rem; }
     @media screen and (min-width: 700px) {
       .section-body .center {
@@ -567,10 +571,10 @@ section.alert {
       background: #232323;
       border-radius: 5px;
       padding: 1rem;
-      margin-top: 1rem; }
+      margin: 1rem 2rem 0; }
       @media screen and (min-width: 540px) {
         section.alert div.wrapper div {
-          padding: 1rem 2rem;
+          padding: 1rem 1.5rem;
           margin-top: 0; } }
   section.alert#reminders .wrapper header, section.alert#reminders .wrapper div {
     flex: 1; }
@@ -695,6 +699,8 @@ h2#questions {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   opacity: 0.07; }
+  .ad-nauseum#ame {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='192px'><text x='0' y='15' fill='black' font-family='monospace' font-weight='regular' font-size='15'>APOCALYPSE MADE EASY!</text></svg>"); }
   .ad-nauseum#alert {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='170px'><text x='0' y='15' fill='white' font-family='monospace' font-weight='regular' font-size='15'>BORIS ALERT SYSTEM</text></svg>"); }
   .ad-nauseum#remembers {

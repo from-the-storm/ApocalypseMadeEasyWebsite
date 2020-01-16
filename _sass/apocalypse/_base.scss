@@ -48,6 +48,8 @@ body {
     }
     .sixty {
         padding: 0.5rem;
+        z-index: 1;
+        position: relative;
         @include variable-query(700px) {
             padding: 1rem;
             width: 60%;
@@ -56,6 +58,8 @@ body {
     }
     .center {
         margin: 0 -0.5em;
+        z-index: 1;
+        position: relative;
         padding: 0 0 1rem;
             @include variable-query(700px) {
                 padding: 1rem;
@@ -130,9 +134,9 @@ section.alert {
             background: $black;
             border-radius: 5px;
             padding: 1rem;
-            margin-top: 1rem;
+            margin: 1rem 2rem 0;
                 @include variable-query(540px) {
-                    padding: 1rem 2rem;
+                    padding: 1rem 1.5rem;
                     margin-top: 0;
                 }
         }
@@ -289,6 +293,9 @@ h2#questions {
     -webkit-backface-visibility: hidden;    
     backface-visibility: hidden;
     opacity: 0.07;
+        &#ame {
+            background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='192px'><text x='0' y='15' fill='black' font-family='monospace' font-weight='regular' font-size='15'>APOCALYPSE MADE EASY!</text></svg>");
+        }
         &#alert {
             background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='170px'><text x='0' y='15' fill='white' font-family='monospace' font-weight='regular' font-size='15'>BORIS ALERT SYSTEM</text></svg>");
         }
