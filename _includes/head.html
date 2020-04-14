@@ -17,24 +17,5 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  {% if page.url == '/' or page.url == '/vancouver' or page.url == '/kelowna' or page.url == '/vancouver-families' or page.url == '/kelowna-families' %}
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="../assets/js/foundation.min.js"></script> 
-  <script defer src="../assets/js/app.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGyVCtlNrsdN5IK3gbNYqjGy2g0hUkTOs&callback=initMap"></script>
-  {% endif %}
-  {% if page.url == '/' %}
-  <script src="../assets/js/map-init.js"></script>
-  {% endif %}
-
-  {% include google-analytics.html %}
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KW3FPFT');</script>
-<!-- End Google Tag Manager -->
   
 </head>
